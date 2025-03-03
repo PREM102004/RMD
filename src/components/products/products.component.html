@@ -12,7 +12,7 @@
         />
       </div>
     </div>
-    <div *ngIf="isFilteredListEmpty()" class="no-results">
+    <!-- <div *ngIf="isFilteredListEmpty()" class="no-results">
         <p>No products found for the search term.</p>
       </div>
     <accordion *ngIf="!isFilteredListEmpty()">
@@ -28,13 +28,13 @@
             <i class="fas fa-chevron-down"></i>
           </div>
         </button>
-        <div class="productItem row" *ngFor="let product of industry.value">
+        <div class="productItem row" *ngFor="let product of industry.value"> -->
           <!-- Left side: Image -->
-          <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 image-section">
+          <!-- <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 image-section">
             <img [src]="product.image" alt="{{ product.name }}" class="product-image" width="100%" height="300px" />
-          </div>
+          </div> -->
           <!-- Right side: Details -->
-          <div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 product-details">
+          <!-- <div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 product-details">
             <div class="productName">
               <h5>{{ product.name }}</h5>
             </div>
@@ -54,6 +54,41 @@
         </div>
       </accordion-group>
     </div>
-    </accordion>
+    </accordion> -->
+
+
+    <form #schemeForm="ngForm" (ngSubmit)="onSubmit(schemeForm.value)">
+      <!-- <label>Occupation:</label>
+      <select name="occupation" [(ngModal)]="selectedjob" required>
+        <option *ngFor="let occ of occulistpation" [value]="occ" >{{ occ }}</option>
+      </select> -->
+      <label>Occupation:</label>
+      <input type="text" name="Occupation" ngModel required />
+    
+      <label>Salary:</label>
+      <input type="number" name="salary" ngModel required />
+    
+      <label>Age:</label>
+      <input type="number" name="age" ngModel required />
+    
+      <button type="submit">Find Schemes</button>
+    </form>
+    
+    <div *ngIf="filterschemes.length">
+      <h3>Available Schemes:</h3>
+      <div *ngFor="let scheme of filterschemes">
+        <h4>{{ scheme.name }}</h4>
+        <p><strong>Benefits:</strong> {{ scheme.Benefits }}</p>
+        <p><strong>How It Works:</strong> {{ scheme["How It Works"] }}</p>
+        <p><a [href]="scheme.link" target="_blank">Apply Here</a></p>
+      </div>
+    </div>
+    
+    <p *ngIf="filterschemes.length === 0 && formdata.Occupation">No schemes found for the given inputs.</p>
+    
+
+
+
+
   </div>
   

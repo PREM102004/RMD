@@ -1,219 +1,249 @@
 {
-    "Steel Industry": [
-      {
-        "name": "Squeeze Rolls",
-        "description": "These rolls are essential for removing excess liquid from metal surfaces during galvanizing or rolling processes, ensuring smooth finishes.",
-        "image":"../assets/Json-Images/squeeze-roller.png"
-      },
-      {
-        "name": "Snubber Rolls",
-        "description": "They support and guide steel strips during processing, preventing misalignment and ensuring smooth operations.",
-        "image":"../assets/Json-Images/snubber-roller.jpg"
-      },
-      {
-        "name": "Pinch Rolls",
-        "description": " Pinch rolls are designed to pinch and feed metal sheets or strips through the production line with precision.",
-        "image":"../assets/Json-Images/pinch-roller-rubber.png"
-      },
-      {
-        "name": "Steering Rolls",
-        "description": " Pinch rolls are designed to pinch and feed metal sheets or strips through the production line with precision.",
-        "image":"../assets/Json-Images/steering-roller.png"
-      },
-      {
-        "name": "Bridle Rolls",
-        "description": "Bridle rolls maintain consistent tension in steel strips as they move through the production process.",
-        "image":"../assets/Json-Images/bridle-roller.png"
-      },
-      {
-        "name": "Idler Rolls",
-        "description": "Provides support to steel strips and helps maintain alignment.",
-        "image":"../assets/Json-Images/idler-roller.png"
-      },
-      {
-        "name": "Deflector Rolls",
-        "description": "Deflector rolls are used to guide steel strips at specific angles during production, optimizing flow. ",
-        "image":"../assets/Json-Images/deflector-roller.png"
-      },
-      {
-        "name": "Dryer Rolls",
-        "description": "Dryer rolls are responsible for drying the surface of steel sheets after coating or cleaning to ensure proper finishing.",
-        "image":"../assets/Json-Images/dryer-roller.png"
-      },
-      {
-        "name": "Oiler Rolls",
-        "description": "These rolls apply a thin layer of oil to steel sheets to prevent rusting, protecting the material from environmental damage.",
-        "image":"../assets/Json-Images/oiler-roller.png"
-      },
-      {
-        "name": "Vertical Accumulator Rolls (Exit)",
-        "description": "Helps accumulate steel strips vertically for efficient storage or processing.These rolls help accumulate steel strips vertically for efficient storage or further processing.",
-        "image":"../assets/Json-Images/vertical-accumulator-rolls.png"
-      }
-    ],
-    "Paper Industry": [
-      {
-        "name": "Top Press Rolls with Micro-rock covering",
-        "description": "Provides uniform pressure during the paper pressing process to ensure consistent sheet thickness.",
-        "image":"../assets/Json-Images/paper-industry/Top Press Rolls with Micro-rock covering.jpg"
-      },
-      {
-        "name": "Pickup Rolls",
-        "description": "Transfers wet paper sheets from the forming section to the press section in paper manufacturing.",
-        "image":"../assets/Json-Images/paper-industry/Pickup Rolls.jpg"
-      },
-      {
-        "name": "Wire Couch Rolls",
-        "description": "Supports and removes excess water from the wire in paper machines, improving paper quality.",
-        "image":"../assets/Json-Images/paper-industry/Wire Couch Rolls.png"
-      },
-      {
-        "name": "Dryer Felt Rolls",
-        "description": "Carries paper sheets through the drying process, ensuring a uniform drying effect across the paper.",
-         "image":"../assets/Json-Images/paper-industry/Dryer Felt Rolls.png"
-      },
-      {
-        "name": "Bottom Press Rolls",
-        "description": "Works alongside top press rolls to apply pressure and remove water, helping achieve the desired paper consistency.",
-        "image":"../assets/Json-Images/paper-industry/Bottom Press Rolls.png"
-      },
-      {
-        "name": "Mould Couch Rolls",
-        "description": "Used in the forming section to support and shape the paper as it is being created.",
-        "image":"../assets/Json-Images/paper-industry/Mould Couch Rolls.png"
-      },
-      {
-        "name": "Mount Hope Rolls",
-        "description": "These rolls maintain stability and proper alignment of paper during the manufacturing process.",
-        "image":"../assets/Json-Images/paper-industry/Mount Hope Rolls.jpg"
-      },
-      {
-        "name": "Wire Return Rolls",
-        "description": "Guide and redirect the wire in paper machines for continuous and smooth operation.",
-        "image":"../assets/Json-Images/paper-industry/Wire Return Rolls.png"
-      },
-      {
-        "name": "M.G. Touch Rolls",
-        "description": "Imparts a smooth, glossy finish to paper sheets, enhancing their appearance and texture.",
-        "image":"../assets/Json-Images/paper-industry/M.G. Touch Rolls.png"
-      },
-      {
-        "name": "Press Felt Rolls",
-        "description": "Supports the felts that carry the paper through the press section for proper water removal.",
-        "image":"../assets/Json-Images/paper-industry/Press Felt Rolls.png"
-      },
-      {
-        "name": "Warm Rolls",
-        "description": "These rolls heat and smooth the paper sheets during the drying process, helping maintain the paper's integrity.",
-        "image":"../assets/Json-Images/paper-industry/Warm Rolls.png"
-      }
-    ],
-    "Textile Industry": [
-      {
-        "name": "Jigger Rolls",
-        "description": "Used in dyeing machines to wind and unwind textile fabric, ensuring smooth and consistent dyeing.",
-        "image":"../assets/Json-Images/textile-industry/Jigger Rolls.png"
-      },
-      {
-        "name": "Printing Rolls",
-        "description": "Applies color or patterns to textile fabrics during printing, creating vibrant designs and textures.",
-        "image":"../assets/Json-Images/textile-industry/Printing Rolls.png"
-      },
-      {
-        "name": "Mangle Rolls",
-        "description": "Removes excess liquid and provides smoothness to textiles after processing, ensuring fabric quality.",
-        "image":"../assets/Json-Images/textile-industry/Mangle Rolls.jpg"
-      },
-      {
-        "name": "Guide Rolls",
-        "description": "Directs and aligns fabrics during various textile manufacturing steps to ensure precision and consistency.",
-        "image":"../assets/Json-Images/textile-industry/Guide Rolls.jpg"
-      },
-      {
-        "name": "Stenter Rolls",
-        "description": "These rolls are used in stenter machines to stretch and hold fabrics during heat-setting, improving fabric strength and texture.",
-        "image":"../assets/Json-Images/textile-industry/Stenter Rolls.png"
-      }
-    ],
-    "Roofing Industry": [
-      {
-        "name": "Custom Coverings for Roll Applications",
-        "description": "Designed for durability and resistance against abrasion, ensuring effective performance in roofing material production.",
-         "image":"../assets/Json-Images/roofing-industry/Custom Coverings for Roll Applications.jpg"
-      }
-    ],
-    "Printing Industry": [
-      {
-        "name": "Offset Ink Forme Roller",
-        "description": "Ensures an even ink application on printing plates in offset printing machines, enabling high-quality prints.",
-        "image":"../assets/Json-Images/printing-industry/OffsetInkFormeRoller.png"
-      },
-      {
-        "name": "Offset Ink Duct Roller",
-        "description": "Transfers ink from the ink duct to the forme rollers in offset printing, ensuring smooth ink distribution.",
-        "image":"../assets/Json-Images/printing-industry/OffsetInkDuctRoller.jpg"
-      },
-      {
-        "name": "Flexo Roller",
-        "description": "Used in flexographic printing to apply ink to substrates, offering flexibility and precision for varied printing jobs.",
-        "image":"../assets/Json-Images/printing-industry/FlexoRoller.png"
-      },
-      {
-        "name": "Lamination Roller",
-        "description": "Ensures uniform pressure during lamination, applying consistent layers for smooth finishes.",
-        "image":"../assets/Json-Images/printing-industry/LaminationRoller.png"
-      },
-      {
-        "name": "Offset Ink Distributor Roller",
-        "description": "Distributes ink evenly across the forme rollers, ensuring consistent color and quality in offset printing.",
-        "image":"../assets/Json-Images/printing-industry/OffsetInkDistributorRoller.png"
-      },
-      {
-        "name": "Offset Damping Roller",
-        "description": "Applies a dampening solution to the printing plate to maintain ink-water balance in offset presses.",
-        "image":"../assets/Json-Images/printing-industry/OffsetDampingRoller.png"
-      },
-      {
-        "name": "Photo Gravure Roller",
-        "description": "Engraved roller used in gravure printing to transfer ink to the substrate, ideal for high-quality printing applications.",
-        "image":"../assets/Json-Images/printing-industry/PhotoGravureRoller.png"
-      },
-      {
-        "name": "Varnishing Roller",
-        "description": "Applies varnish to printed materials to achieve a glossy or matte finish, enhancing the appearance of printed materials.",
-        "image":"../assets/Json-Images/printing-industry/VarnishingRoller.png"
-      }
-    ],
-    "Conveyor Pulleys": [
-      {
-        "name": "Rubber and FRP Conveyor Pulleys",
-        "description": "Designed for efficient material handling with durability and high resistance to wear, these pulleys are essential for various industrial operations.",
-        "image":"../assets/Json-Images/conveyor-pulleys/RubberandFRPConveyorPulleys.jpg"
-      }
-    ],
-    "FRP Products": [
-      {
-        "name": "Pipes and Fittings",
-        "description": "Lightweight, corrosion-resistant pipes and fittings designed for industrial piping systems, offering durability and long-term performance.",
-        "image":"../assets/Json-Images/frp-products/pipesandfittings.png"
-      },
-      {
-        "name": "Tanks and Vessels",
-        "description": "Custom-designed FRP tanks and vessels, perfect for handling high-temperature and corrosive materials in industrial applications.",
-        "image":"../assets/Json-Images/frp-products/TanksandVessels.png"
-      },
-      {
-        "name": "Scrubbers and Stacks",
-        "description": "These products are highly efficient in managing industrial emissions, offering long-lasting corrosion resistance.",
-        "image":"../assets/Json-Images/frp-products/ScrubbersandStacks.png"
-      }
-    ],
-    "Sand Blasting":[
-      {
-        "name":"Sand Blasting",
-        "description":"Specializing in precision sandblasting, we provide top-notch surface finishing for all industries, enhancing the quality and durability of materials.",
-        "image":"../assets/Json-Images/sandblasting.jpg"
-      }
-    ]
-  }
-  
+  "data": [
+    {
+      "Occupation": "Farmer",
+      "Categories": [
+        {
+          "Salary Range": "30000-60000",
+          "Age Range": "18-30",
+          "Schemes": [
+            {
+              "name": "PM Kisan Samman Nidhi Yojana",
+              "Age Category": "18-60 years",
+              "Benefits": "Provides financial assistance of ₹6000 per year to small and marginal farmers.",
+              "How It Works": "Farmers receive three equal installments of ₹2000 directly into their bank accounts every four months.",
+              "How to Apply": "Visit PM Kisan portal and register online.",
+              "link": "https://pmkisan.gov.in"
+            },
+            {
+              "name": "Crop Insurance Scheme",
+              "Age Category": "18-70 years",
+              "Benefits": "Provides financial protection against crop losses due to natural calamities.",
+              "How It Works": "Farmers pay a minimal premium and receive compensation for losses.",
+              "How to Apply": "Apply through the agricultural office or online portal.",
+              "link": "https://www.agri-insurance.gov.in"
+            }
+          ]
+        },
+        {
+          "Salary Range": "60000-100000",
+          "Age Range": "31-50",
+          "Schemes": [
+            {
+              "name": "Agricultural Infrastructure Fund",
+              "Age Category": "25-60 years",
+              "Benefits": "Supports farmers in building post-harvest management infrastructure.",
+              "How It Works": "Provides subsidized loans for storage and processing units.",
+              "How to Apply": "Apply via the Agricultural Infrastructure Fund portal.",
+              "link": "https://agriinfra.dac.gov.in"
+            },
+            {
+              "name": "Fasal Bima Yojana",
+              "Age Category": "18-65 years",
+              "Benefits": "Offers crop insurance against natural calamities and pests.",
+              "How It Works": "Farmers pay a small premium and get compensation in case of crop damage.",
+              "How to Apply": "Register online on the PMFBY portal.",
+              "link": "https://pmfby.gov.in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Occupation": "Student",
+      "Categories": [
+        {
+          "Salary Range": "0-10000",
+          "Age Range": "18-25",
+          "Schemes": [
+            {
+              "name": "National Scholarship Scheme",
+              "Age Category": "18-25 years",
+              "Benefits": "Provides financial aid for higher education students from economically weaker sections.",
+              "How It Works": "Covers tuition fees and provides monthly stipends.",
+              "How to Apply": "Apply on the National Scholarship Portal.",
+              "link": "https://scholarships.gov.in"
+            },
+            {
+              "name": "Education Loan Subsidy Scheme",
+              "Age Category": "18-30 years",
+              "Benefits": "Offers interest subsidies on educational loans for eligible students.",
+              "How It Works": "Government pays the interest during the study period.",
+              "How to Apply": "Apply through banks participating in the scheme.",
+              "link": "https://www.studentloans.gov.in"
+            }
+          ]
+        },
+        {
+          "Salary Range": "10000-20000",
+          "Age Range": "25-30",
+          "Schemes": [
+            {
+              "name": "Skill Development Training Program",
+              "Age Category": "18-35 years",
+              "Benefits": "Provides free skill development training to students and young professionals.",
+              "How It Works": "Covers tuition fees and offers placement assistance.",
+              "How to Apply": "Register on the Skill India Portal.",
+              "link": "https://skillindia.gov.in"
+            },
+            {
+              "name": "Startup India Seed Fund",
+              "Age Category": "21-30 years",
+              "Benefits": "Funding support for students and graduates to start their own ventures.",
+              "How It Works": "Provides seed funding and incubation support.",
+              "How to Apply": "Apply via the Startup India portal.",
+              "link": "https://www.startupindia.gov.in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Occupation": "Retired",
+      "Categories": [
+        {
+          "Salary Range": "20000-50000",
+          "Age Range": "60-75",
+          "Schemes": [
+            {
+              "name": "Pradhan Mantri Vaya Vandana Yojana",
+              "Age Category": "60-80 years",
+              "Benefits": "Provides a guaranteed pension plan for senior citizens.",
+              "How It Works": "Retirees invest a lump sum and receive a fixed pension for 10 years.",
+              "How to Apply": "Apply at LIC or authorized banks.",
+              "link": "https://licindia.in"
+            },
+            {
+              "name": "Senior Citizen Savings Scheme",
+              "Age Category": "60-75 years",
+              "Benefits": "Provides safe investment options with high interest rates.",
+              "How It Works": "Retirees deposit savings and receive quarterly interest payouts.",
+              "How to Apply": "Apply at post offices or banks.",
+              "link": "https://www.indiapost.gov.in"
+            }
+          ]
+        },
+        {
+          "Salary Range": "50000-80000",
+          "Age Range": "65-80",
+          "Schemes": [
+            {
+              "name": "Varishtha Pension Bima Yojana",
+              "Age Category": "60-80 years",
+              "Benefits": "Offers pension benefits with an assured interest rate.",
+              "How It Works": "Provides monthly pensions based on a one-time premium deposit.",
+              "How to Apply": "Apply through LIC or government banks.",
+              "link": "https://licindia.in"
+            },
+            {
+              "name": "Healthcare Insurance for Senior Citizens",
+              "Age Category": "60-85 years",
+              "Benefits": "Provides health insurance with coverage for critical illnesses.",
+              "How It Works": "Covers hospitalization expenses and medical costs.",
+              "How to Apply": "Register through insurance providers or government schemes.",
+              "link": "https://www.pmjay.gov.in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Occupation": "Teacher",
+      "Categories": [
+        {
+          "Salary Range": "40000-80000",
+          "Age Range": "25-45",
+          "Schemes": [
+            {
+              "name": "Teachers Welfare Fund",
+              "Age Category": "25-50 years",
+              "Benefits": "Provides financial assistance for teachers' professional development.",
+              "How It Works": "Grants for training and research opportunities.",
+              "How to Apply": "Apply through the Ministry of Education portal.",
+              "link": "https://education.gov.in"
+            },
+            {
+              "name": "Housing Loan Subsidy for Teachers",
+              "Age Category": "30-55 years",
+              "Benefits": "Offers subsidies on housing loans for teachers.",
+              "How It Works": "Teachers receive reduced interest rates on home loans.",
+              "How to Apply": "Apply through national banks or government portals.",
+              "link": "https://www.nhb.gov.in"
+            }
+          ]
+        },
+        {
+          "Salary Range": "80000-120000",
+          "Age Range": "35-55",
+          "Schemes": [
+            {
+              "name": "Higher Education Research Grants",
+              "Age Category": "30-60 years",
+              "Benefits": "Provides financial assistance for teachers conducting research.",
+              "How It Works": "Grants for publishing papers, attending conferences, and research projects.",
+              "How to Apply": "Apply via the UGC portal.",
+              "link": "https://www.ugc.ac.in"
+            },
+            {
+              "name": "Retirement Benefits for Teachers",
+              "Age Category": "50-65 years",
+              "Benefits": "Ensures pension and gratuity benefits for retiring teachers.",
+              "How It Works": "Teachers receive monthly pensions and lump sum gratuity.",
+              "How to Apply": "Apply through the education department or pension fund office.",
+              "link": "https://www.pensionersportal.gov.in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Occupation": "Unemployed",
+      "Categories": [
+        {
+          "Salary Range": "0-20000",
+          "Age Range": "18-35",
+          "Schemes": [
+            {
+              "name": "MGNREGA",
+              "Age Category": "18-60 years",
+              "Benefits": "Provides guaranteed 100 days of wage employment to rural unemployed individuals.",
+              "How It Works": "Rural unemployed individuals can work on government projects.",
+              "How to Apply": "Apply at the Gram Panchayat office.",
+              "link": "https://nrega.nic.in"
+            },
+            {
+              "name": "Skill India Mission",
+              "Age Category": "18-45 years",
+              "Benefits": "Provides vocational training and employment opportunities.",
+              "How It Works": "Free skill training programs with job placement support.",
+              "How to Apply": "Apply through the Skill India portal.",
+              "link": "https://skillindia.gov.in"
+            }
+          ]
+        },
+        {
+          "Salary Range": "20000-40000",
+          "Age Range": "35-50",
+          "Schemes": [
+            {
+              "name": "Self-Employment Loan Scheme",
+              "Age Category": "25-50 years",
+              "Benefits": "Offers loans for unemployed individuals to start small businesses.",
+              "How It Works": "Provides low-interest loans with flexible repayment options.",
+              "How to Apply": "Apply through nationalized banks or financial institutions.",
+              "link": "https://msme.gov.in"
+            },
+            {
+              "name": "Unemployment Allowance Scheme",
+              "Age Category": "18-45 years",
+              "Benefits": "Provides financial assistance to unemployed individuals actively seeking jobs.",
+              "How It Works": "Monthly stipend for a limited duration while searching for employment.",
+              "How to Apply": "Apply via the Employment Exchange office.",
+              "link": "https://www.ncs.gov.in"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

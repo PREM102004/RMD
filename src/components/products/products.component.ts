@@ -17,20 +17,51 @@ export class ProductsComponent {
   activeIndustry: string | null='';
   filteredProductList: { [key: string]: any[] } = {};
    searchTerm: string = '';
-
+   datascheme :any[]=[]
+   formdata = {Occupation : '',salary : 0,age : 0}
+   filterschemes : any[]=[]
+   occulistpation : string[]=[]
+   selectedOccupation: string = '';
 
     constructor(private http : HttpClient){}
    
     ngOnInit():void{
-      this.http.get<{ [key: string]: any[] }>('assets/products.json').subscribe(data =>{
-        this.productList = data;
+      this.http.get<any>('assets/products.json').subscribe(response =>{
+        this.datascheme = response.data;
+        console.log('this.productList: ', this.datascheme);
+        this.occulistpation =this.datascheme.map((occ) => occ.Occupation);
         this.filteredProductList = { ...this.productList };
-        console.log('productList',this.productList)
+        console.log('occulistpation',this.occulistpation)
       })
+    }
+    onSubmit(formvalue:any){
+      this.formdata = formvalue;
+      this.getfilterdata()
     }
     // toggleViewlist(industryKey: string): void {
     //   this.activeIndustry = this.activeIndustry === industryKey ? null : industryKey;
     // }
+
+getfilterdata(){
+  const {Occupation , salary,age} = this.formdata
+   const occupationData =this.datascheme.find(occ => occ.Occupation == Occupation);
+
+   if(!occupationData){
+    this.filterschemes = []
+    return
+   }
+
+   const matchedSchemes = occupationData.Categories.find((category:any)=>{
+  const [minsalary,maxsalary] = category["Salary Range"].split('-').map(Number);
+  const [minage,maxage] = category["Age Range"].split('-').map(Number);
+
+  return salary >= minsalary && salary<= maxsalary && age >=minage && age <=maxage;
+});
+  this.filterschemes = matchedSchemes.Schemes;
+   
+}
+
+
 
     searchProducts(event: Event): void {
       const searchTerm = (event.target as HTMLInputElement).value.trim().toLowerCase();

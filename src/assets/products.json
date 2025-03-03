@@ -1,0 +1,219 @@
+{
+    "Steel Industry": [
+      {
+        "name": "Squeeze Rolls",
+        "description": "These rolls are essential for removing excess liquid from metal surfaces during galvanizing or rolling processes, ensuring smooth finishes.",
+        "image":"../assets/Json-Images/squeeze-roller.png"
+      },
+      {
+        "name": "Snubber Rolls",
+        "description": "They support and guide steel strips during processing, preventing misalignment and ensuring smooth operations.",
+        "image":"../assets/Json-Images/snubber-roller.jpg"
+      },
+      {
+        "name": "Pinch Rolls",
+        "description": " Pinch rolls are designed to pinch and feed metal sheets or strips through the production line with precision.",
+        "image":"../assets/Json-Images/pinch-roller-rubber.png"
+      },
+      {
+        "name": "Steering Rolls",
+        "description": " Pinch rolls are designed to pinch and feed metal sheets or strips through the production line with precision.",
+        "image":"../assets/Json-Images/steering-roller.png"
+      },
+      {
+        "name": "Bridle Rolls",
+        "description": "Bridle rolls maintain consistent tension in steel strips as they move through the production process.",
+        "image":"../assets/Json-Images/bridle-roller.png"
+      },
+      {
+        "name": "Idler Rolls",
+        "description": "Provides support to steel strips and helps maintain alignment.",
+        "image":"../assets/Json-Images/idler-roller.png"
+      },
+      {
+        "name": "Deflector Rolls",
+        "description": "Deflector rolls are used to guide steel strips at specific angles during production, optimizing flow. ",
+        "image":"../assets/Json-Images/deflector-roller.png"
+      },
+      {
+        "name": "Dryer Rolls",
+        "description": "Dryer rolls are responsible for drying the surface of steel sheets after coating or cleaning to ensure proper finishing.",
+        "image":"../assets/Json-Images/dryer-roller.png"
+      },
+      {
+        "name": "Oiler Rolls",
+        "description": "These rolls apply a thin layer of oil to steel sheets to prevent rusting, protecting the material from environmental damage.",
+        "image":"../assets/Json-Images/oiler-roller.png"
+      },
+      {
+        "name": "Vertical Accumulator Rolls (Exit)",
+        "description": "Helps accumulate steel strips vertically for efficient storage or processing.These rolls help accumulate steel strips vertically for efficient storage or further processing.",
+        "image":"../assets/Json-Images/vertical-accumulator-rolls.png"
+      }
+    ],
+    "Paper Industry": [
+      {
+        "name": "Top Press Rolls with Micro-rock covering",
+        "description": "Provides uniform pressure during the paper pressing process to ensure consistent sheet thickness.",
+        "image":"../assets/Json-Images/paper-industry/Top Press Rolls with Micro-rock covering.jpg"
+      },
+      {
+        "name": "Pickup Rolls",
+        "description": "Transfers wet paper sheets from the forming section to the press section in paper manufacturing.",
+        "image":"../assets/Json-Images/paper-industry/Pickup Rolls.jpg"
+      },
+      {
+        "name": "Wire Couch Rolls",
+        "description": "Supports and removes excess water from the wire in paper machines, improving paper quality.",
+        "image":"../assets/Json-Images/paper-industry/Wire Couch Rolls.png"
+      },
+      {
+        "name": "Dryer Felt Rolls",
+        "description": "Carries paper sheets through the drying process, ensuring a uniform drying effect across the paper.",
+         "image":"../assets/Json-Images/paper-industry/Dryer Felt Rolls.png"
+      },
+      {
+        "name": "Bottom Press Rolls",
+        "description": "Works alongside top press rolls to apply pressure and remove water, helping achieve the desired paper consistency.",
+        "image":"../assets/Json-Images/paper-industry/Bottom Press Rolls.png"
+      },
+      {
+        "name": "Mould Couch Rolls",
+        "description": "Used in the forming section to support and shape the paper as it is being created.",
+        "image":"../assets/Json-Images/paper-industry/Mould Couch Rolls.png"
+      },
+      {
+        "name": "Mount Hope Rolls",
+        "description": "These rolls maintain stability and proper alignment of paper during the manufacturing process.",
+        "image":"../assets/Json-Images/paper-industry/Mount Hope Rolls.jpg"
+      },
+      {
+        "name": "Wire Return Rolls",
+        "description": "Guide and redirect the wire in paper machines for continuous and smooth operation.",
+        "image":"../assets/Json-Images/paper-industry/Wire Return Rolls.png"
+      },
+      {
+        "name": "M.G. Touch Rolls",
+        "description": "Imparts a smooth, glossy finish to paper sheets, enhancing their appearance and texture.",
+        "image":"../assets/Json-Images/paper-industry/M.G. Touch Rolls.png"
+      },
+      {
+        "name": "Press Felt Rolls",
+        "description": "Supports the felts that carry the paper through the press section for proper water removal.",
+        "image":"../assets/Json-Images/paper-industry/Press Felt Rolls.png"
+      },
+      {
+        "name": "Warm Rolls",
+        "description": "These rolls heat and smooth the paper sheets during the drying process, helping maintain the paper's integrity.",
+        "image":"../assets/Json-Images/paper-industry/Warm Rolls.png"
+      }
+    ],
+    "Textile Industry": [
+      {
+        "name": "Jigger Rolls",
+        "description": "Used in dyeing machines to wind and unwind textile fabric, ensuring smooth and consistent dyeing.",
+        "image":"../assets/Json-Images/textile-industry/Jigger Rolls.png"
+      },
+      {
+        "name": "Printing Rolls",
+        "description": "Applies color or patterns to textile fabrics during printing, creating vibrant designs and textures.",
+        "image":"../assets/Json-Images/textile-industry/Printing Rolls.png"
+      },
+      {
+        "name": "Mangle Rolls",
+        "description": "Removes excess liquid and provides smoothness to textiles after processing, ensuring fabric quality.",
+        "image":"../assets/Json-Images/textile-industry/Mangle Rolls.jpg"
+      },
+      {
+        "name": "Guide Rolls",
+        "description": "Directs and aligns fabrics during various textile manufacturing steps to ensure precision and consistency.",
+        "image":"../assets/Json-Images/textile-industry/Guide Rolls.jpg"
+      },
+      {
+        "name": "Stenter Rolls",
+        "description": "These rolls are used in stenter machines to stretch and hold fabrics during heat-setting, improving fabric strength and texture.",
+        "image":"../assets/Json-Images/textile-industry/Stenter Rolls.png"
+      }
+    ],
+    "Roofing Industry": [
+      {
+        "name": "Custom Coverings for Roll Applications",
+        "description": "Designed for durability and resistance against abrasion, ensuring effective performance in roofing material production.",
+         "image":"../assets/Json-Images/roofing-industry/Custom Coverings for Roll Applications.jpg"
+      }
+    ],
+    "Printing Industry": [
+      {
+        "name": "Offset Ink Forme Roller",
+        "description": "Ensures an even ink application on printing plates in offset printing machines, enabling high-quality prints.",
+        "image":"../assets/Json-Images/printing-industry/OffsetInkFormeRoller.png"
+      },
+      {
+        "name": "Offset Ink Duct Roller",
+        "description": "Transfers ink from the ink duct to the forme rollers in offset printing, ensuring smooth ink distribution.",
+        "image":"../assets/Json-Images/printing-industry/OffsetInkDuctRoller.jpg"
+      },
+      {
+        "name": "Flexo Roller",
+        "description": "Used in flexographic printing to apply ink to substrates, offering flexibility and precision for varied printing jobs.",
+        "image":"../assets/Json-Images/printing-industry/FlexoRoller.png"
+      },
+      {
+        "name": "Lamination Roller",
+        "description": "Ensures uniform pressure during lamination, applying consistent layers for smooth finishes.",
+        "image":"../assets/Json-Images/printing-industry/LaminationRoller.png"
+      },
+      {
+        "name": "Offset Ink Distributor Roller",
+        "description": "Distributes ink evenly across the forme rollers, ensuring consistent color and quality in offset printing.",
+        "image":"../assets/Json-Images/printing-industry/OffsetInkDistributorRoller.png"
+      },
+      {
+        "name": "Offset Damping Roller",
+        "description": "Applies a dampening solution to the printing plate to maintain ink-water balance in offset presses.",
+        "image":"../assets/Json-Images/printing-industry/OffsetDampingRoller.png"
+      },
+      {
+        "name": "Photo Gravure Roller",
+        "description": "Engraved roller used in gravure printing to transfer ink to the substrate, ideal for high-quality printing applications.",
+        "image":"../assets/Json-Images/printing-industry/PhotoGravureRoller.png"
+      },
+      {
+        "name": "Varnishing Roller",
+        "description": "Applies varnish to printed materials to achieve a glossy or matte finish, enhancing the appearance of printed materials.",
+        "image":"../assets/Json-Images/printing-industry/VarnishingRoller.png"
+      }
+    ],
+    "Conveyor Pulleys": [
+      {
+        "name": "Rubber and FRP Conveyor Pulleys",
+        "description": "Designed for efficient material handling with durability and high resistance to wear, these pulleys are essential for various industrial operations.",
+        "image":"../assets/Json-Images/conveyor-pulleys/RubberandFRPConveyorPulleys.jpg"
+      }
+    ],
+    "FRP Products": [
+      {
+        "name": "Pipes and Fittings",
+        "description": "Lightweight, corrosion-resistant pipes and fittings designed for industrial piping systems, offering durability and long-term performance.",
+        "image":"../assets/Json-Images/frp-products/pipesandfittings.png"
+      },
+      {
+        "name": "Tanks and Vessels",
+        "description": "Custom-designed FRP tanks and vessels, perfect for handling high-temperature and corrosive materials in industrial applications.",
+        "image":"../assets/Json-Images/frp-products/TanksandVessels.png"
+      },
+      {
+        "name": "Scrubbers and Stacks",
+        "description": "These products are highly efficient in managing industrial emissions, offering long-lasting corrosion resistance.",
+        "image":"../assets/Json-Images/frp-products/ScrubbersandStacks.png"
+      }
+    ],
+    "Sand Blasting":[
+      {
+        "name":"Sand Blasting",
+        "description":"Specializing in precision sandblasting, we provide top-notch surface finishing for all industries, enhancing the quality and durability of materials.",
+        "image":"../assets/Json-Images/sandblasting.jpg"
+      }
+    ]
+  }
+  

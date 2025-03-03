@@ -1,0 +1,276 @@
+.banner-wrapper{
+    position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url('../../assets/homepagebanner/rubberbannermain.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding: 20px; 
+ 
+}
+
+@keyframes slideFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.banner-content {
+    max-width: 50%; 
+    transform: translate(-50%, -50%);
+  color: white;
+ 
+  padding: 10px;
+  opacity: 0; /* Start with the content hidden */
+  transform: scale(0.8); /* Start scaled down */
+  transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .animate-banner {
+    animation: slideFromLeft 1s ease-out forwards;
+  }
+
+  .banner-content h1 {
+    font-size: 3.5rem;
+    margin: 0;
+   color: #eee;
+  }
+  
+  .banner-content p {
+    font-size: 1rem; 
+    margin: 10px 0 0;
+    font-weight: lighter;
+  }
+.welcome-head{
+    padding: 20px;
+}
+  .welcome-head h1{
+        font-weight: bold;
+        font-size: 40px;
+
+  }
+  .welcome-head p{
+     font-weight: 500;
+  }
+  .border-botttom{
+    width: 50%;
+    height: 5px;
+    background: #fb0404;
+    margin: 18px auto;
+  }
+  .Btn-about{
+    font-weight: 700;
+    padding: 10px 24px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  will-change: transform;
+  }
+ .Btn-about:hover {
+  color: #fff;
+  background-color: #1C5072;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.Btn-about:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.border-bottom{
+    width: 30%;
+    height: 4px;
+    background: #fb0404;
+    margin: 20px auto; 
+}
+  .box i{
+    border: 1px solid #1C5072;
+    color: #1C5072;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .box h3{
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+  }
+  .box p{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+    color: #000;
+}
+// banner-2
+.banner-wrapper-2{
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 530px;
+    background-image: url('../../assets/homepagebanner/sandblasting.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding: 20px; 
+}
+.banner-content-2 {
+    max-width: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(132, 5, 5);
+    padding: 10px;
+    opacity: 0; 
+    transform: scale(0.8); 
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .animate-banner-2 {
+    animation: slideFromRight 1s ease-out forwards; 
+  }
+  .banner-content-2 h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  .banner-content-2 p {
+    font-size: 1rem; 
+    margin: 10px 0 0;
+    font-weight: lighter;
+  }
+  .welcomeste {
+   margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 85%;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease; 
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4), 
+               inset 0px -2px 4px rgba(255, 255, 255, 0.25);
+   will-change: transform, background-color, padding, box-shadow;
+  }
+  
+  .welcomeste.scrolled {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 20px;
+    width: 85%;
+    background-color: #ed1c24;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+
+  @media (max-width: 768px) {
+    .banner-wrapper {
+        height: 270px;
+        justify-content: space-between;
+        padding: 12px;
+        background-position: right;
+        display: flex;
+        align-items: flex-start;
+
+    }
+  
+    .banner-content {
+      max-width: 90%; 
+    }
+  
+    .banner-content h1 {
+        font-size: 1.5rem;
+        color: #ffff;
+        font-weight: bold;
+    }
+  
+    .banner-content p {
+     display: none;
+    }
+    // welcometext
+
+    .welcome-head{
+        padding: 5px;
+    }
+      .welcome-head h1{
+            font-size: 20px;
+    
+      }
+      .Btn-about{
+        padding: 10px 10px;
+        width: 60%;
+      }
+    //   banner2
+
+    .banner-wrapper-2 {
+        height: 250px;
+        justify-content: space-between;
+        padding: 7px;
+        background-position: left;
+        display: flex;
+        align-items: flex-end;
+        opacity: 0.9;
+        text-align: right;
+        justify-content: flex-end;
+
+    }
+  
+    .banner-content-2 {
+      max-width: 80%; 
+    }
+    .banner-content-2 h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+  
+    .banner-content-2 p {
+     display: none;
+    }
+    .welcomeste {
+      padding: 5px;
+      width: 95%; /* Adjust width for smaller screens */
+   }
+
+   .welcomeste.scrolled {
+      padding: 12px; /* Reduce padding for mobile view */
+      width: 100%; /* Increase width to use more screen space */
+      border-radius: 20px; /* Smaller border radius for compact design */
+      box-shadow: rgba(0, 0, 0, 0.2) 0 6px 10px; /* Slightly reduced shadow */
+      transform: translateY(-2px); /* Subtle transformation */
+   }
+  }

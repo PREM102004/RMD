@@ -1,0 +1,112 @@
+.ontop{
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+    height: 100px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.nav-shadow {
+    height: 85px;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.logo img {
+    display: block;
+    width: 4rem;
+    margin-right: 6px;
+    transition: transform 0.5s ease
+}
+.navbar-brand:hover .logo img {
+    transform: rotate(360deg); /* Rotate the logo on hover */
+}
+.brandName h5{
+    font-weight: bold;
+    color: #ed1c24;
+}
+
+   
+
+.catalogue-download {
+  background-color: #ed1c24;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.catalogue-download:not(:disabled):hover,
+.catalogue-download:not(:disabled):focus {
+    outline: 0;
+    background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
+    color: #ffff;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    font-weight: bolder;
+}
+.nav-item{
+    margin-right: 2rem;
+ 
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 1px; 
+    background-color: #ed1c24; 
+    transition: width 0.3s ease-in-out;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+  .nav-link.active{
+    color: #ed1c24;
+    font-weight: 700;
+  }
+
+  @media(max-width:768px){
+    .logo img{
+        width: 3rem;
+        margin-right: 3px;
+    }
+    .navbar-brand{
+        margin-bottom: 15px;
+    }
+    .brandName h5{
+        font-size: 18px;
+    }
+    ul{
+        background-color: #ffff;
+    }
+    li{
+        padding: 10px;
+    }
+    .ontop{
+        margin-bottom: 1.2rem;
+    }
+  }

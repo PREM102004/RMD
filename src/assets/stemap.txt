@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://sri-thirumurugan-engineering.web.app/home</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Products Page -->
+  <url>
+    <loc>https://sri-thirumurugan-engineering.web.app/products</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About Us Page -->
+  <url>
+    <loc>https://sri-thirumurugan-engineering.web.app/about</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://sri-thirumurugan-engineering.web.app/contact</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  </urlset>

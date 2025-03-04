@@ -52,7 +52,7 @@
       </alert>
     </div> -->
 
-    <div class="container d-flex justify-content-center align-items-center">
+    <div [@fadeIn] class="container d-flex justify-content-center align-items-center">
      
       <form #schemeForm="ngForm" (ngSubmit)="onSubmit(schemeForm)" class="form-container" novalidate>
         <div class="row">
@@ -60,9 +60,9 @@
           <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
             <label class="col-md-4">Occupation</label>
             <div class="col-md-8">
-              <select name="Occupation" [(ngModel)]="formdata.Occupation" class="form-control" required>
+              <select name="Occupation" [(ngModel)]="formdata.Occupation" class="form-control"  required>
                 <option value="" disabled selected>Select Occupation</option>
-                <option *ngFor="let occ of datascheme" [value]="occ.Occupation">{{ occ.Occupation }}</option>
+                <option  *ngFor="let occ of occulistpation" [value]="occ">{{ occ }}</option>
               </select>
             </div>
           </div>

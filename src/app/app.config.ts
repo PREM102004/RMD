@@ -9,14 +9,13 @@ import { provideToastr } from 'ngx-toastr';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),provideHttpClient(),provideAnimationsAsync(),
-    provideAnimations(), // Required for ngx-toastr
+    provideAnimations(),
     provideToastr({
-      positionClass: 'toast-top-right', // Position at top-right
-      timeOut: 3000, // Auto-dismiss after 3 seconds
-      progressBar: true, // Show progress bar
-      closeButton: true, // Allow closing
+      positionClass: 'toast-top-right',
+      timeOut: 3000, 
+      progressBar: true, 
+      closeButton: true,
     }),
-
   ]
 };
 

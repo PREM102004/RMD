@@ -57,6 +57,6 @@ export class HomeComponent {
   }
 
   goToAbout(){
-    this.router.navigateByUrl('/about')
+    this.router.navigateByUrl('/products')
   }
 }

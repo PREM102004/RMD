@@ -6,17 +6,17 @@
 }
 .logo img {
     display: block;
-    width: 4rem;
-    margin-right: 6px;
+    width: 4.5rem;
+    margin-right: 5px;
     transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth easing */
 }
 
 .footer-logo:hover .logo img {
     transform: rotate(360deg); /* Rotate the logo on hover */
 }
-.brandName {
+.brandname h5{
     font-weight: bold;
-    color: #ed1c24;
+    color: #264ea4;
 }
 .com{
     background-color: #eee;
@@ -24,7 +24,7 @@
     font-weight: lighter;
 }
 .contact h5{
-    color: #ed1c24;
+    color: #264ea4;
     font-weight: bold;
     padding: 5px;
 

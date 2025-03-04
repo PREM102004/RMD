@@ -1,16 +1,7 @@
 <div class="container-fluid">
     <div class="product-head text-center">
-      <h3>Our Products</h3>
+      <h3>Scheme Sync Welcomes You</h3>
       <div class="border-bottom"></div>
-      <div class="search-bar">
-        <input
-          type="text"
-          [(ngModel)]="searchTerm"
-          (input)="searchProducts($event)"
-          placeholder="Search for products..."
-          class="form-control"
-        />
-      </div>
     </div>
     <!-- <div *ngIf="isFilteredListEmpty()" class="no-results">
         <p>No products found for the search term.</p>
@@ -55,24 +46,73 @@
       </accordion-group>
     </div>
     </accordion> -->
+    <!-- <div *ngIf="filterschemes.length === 0 && formdata.Occupation">
+      <alert *ngIf="showDangerAlert" type="danger" (onClosed)="showDangerAlert = false">
+        No matching schemes found. Please try different inputs.
+      </alert>
+    </div> -->
 
-
-    <form #schemeForm="ngForm" (ngSubmit)="onSubmit(schemeForm.value)">
-      <!-- <label>Occupation:</label>
-      <select name="occupation" [(ngModal)]="selectedjob" required>
-        <option *ngFor="let occ of occulistpation" [value]="occ" >{{ occ }}</option>
-      </select> -->
-      <label>Occupation:</label>
-      <input type="text" name="Occupation" ngModel required />
+    <div class="container d-flex justify-content-center align-items-center">
+     
+      <form #schemeForm="ngForm" (ngSubmit)="onSubmit(schemeForm)" class="form-container" novalidate>
+        <div class="row">
+          <!-- Occupation Field -->
+          <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
+            <label class="col-md-4">Occupation</label>
+            <div class="col-md-8">
+              <select name="Occupation" [(ngModel)]="formdata.Occupation" class="form-control" required>
+                <option value="" disabled selected>Select Occupation</option>
+                <option *ngFor="let occ of datascheme" [value]="occ.Occupation">{{ occ.Occupation }}</option>
+              </select>
+            </div>
+          </div>
     
-      <label>Salary:</label>
-      <input type="number" name="salary" ngModel required />
+          <!-- Salary Field -->
+          <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
+            <label class="col-md-4">Salary</label>
+            <div class="col-md-8">
+              <input 
+                type="number" 
+                name="salary" 
+                class="form-control"
+                ngModel 
+                required
+                #salary="ngModel"
+                pattern="^[0-9]+$"
+              />
+              <div *ngIf="salary.invalid && salary.touched" class="invalid-feedback">
+                Salary is required and must be a number.
+              </div>
+            </div>
+          </div>
     
-      <label>Age:</label>
-      <input type="number" name="age" ngModel required />
+          <!-- Age Field -->
+          <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
+            <label class="col-md-4">Age</label>
+            <div class="col-md-8">
+              <input 
+                type="number" 
+                class="form-control"
+                name="age" 
+                ngModel 
+                required
+                #age="ngModel"
+                (input)="limitAgeLength($event)"
+              />
+              <div *ngIf="age.invalid && age.touched" class="invalid-feedback">
+                Age is required and should not exceed two digits.
+              </div>
+            </div>
+          </div>
+        </div>
     
-      <button type="submit">Find Schemes</button>
-    </form>
+        <!-- Submit Button -->
+        <div class="text-center mt-3">
+          <button type="submit" class="Btn-about" [disabled]="schemeForm.invalid">Find Schemes</button>
+        </div>
+      </form>
+    </div>
+    
     
     <div *ngIf="filterschemes.length">
       <h3>Available Schemes:</h3>
@@ -83,12 +123,5 @@
         <p><a [href]="scheme.link" target="_blank">Apply Here</a></p>
       </div>
     </div>
-    
-    <p *ngIf="filterschemes.length === 0 && formdata.Occupation">No schemes found for the given inputs.</p>
-    
-
-
-
-
   </div>
   

@@ -1,13 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { FormsModule } from '@angular/forms';
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule, AccordionModule,FormsModule],
+  imports: [CommonModule, AccordionModule,FormsModule,AlertModule ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
@@ -22,6 +24,7 @@ export class ProductsComponent {
    filterschemes : any[]=[]
    occulistpation : string[]=[]
    selectedOccupation: string = '';
+   showDangerAlert = false;
 
     constructor(private http : HttpClient){}
    
@@ -34,31 +37,49 @@ export class ProductsComponent {
         console.log('occulistpation',this.occulistpation)
       })
     }
-    onSubmit(formvalue:any){
-      this.formdata = formvalue;
-      this.getfilterdata()
+    private toastr = inject(ToastrService);
+    onSubmit(schemeForm: any) {
+      if (schemeForm.invalid) {
+        return;
+      }
+      this.formdata = schemeForm.value;
+      this.getfilterdata();
+     
     }
-    // toggleViewlist(industryKey: string): void {
-    //   this.activeIndustry = this.activeIndustry === industryKey ? null : industryKey;
-    // }
+    limitAgeLength(event: any): void {
+      let input = event.target.value;
+      if (input.length > 2) {
+        event.target.value = input.slice(0, 2); // Restrict to two digits
+      }
+    }
 
 getfilterdata(){
   const {Occupation , salary,age} = this.formdata
    const occupationData =this.datascheme.find(occ => occ.Occupation == Occupation);
 
-   if(!occupationData){
-    this.filterschemes = []
-    return
-   }
+   if (!occupationData) {
+    this.filterschemes = [];
+    return;
+  }
 
-   const matchedSchemes = occupationData.Categories.find((category:any)=>{
-  const [minsalary,maxsalary] = category["Salary Range"].split('-').map(Number);
-  const [minage,maxage] = category["Age Range"].split('-').map(Number);
+  
+  const matchedCategory = occupationData.Categories.find((category: any) => {
+    const [minSalary, maxSalary] = category["Salary Range"].split('-').map(Number);
+    const [minAge, maxAge] = category["Age Range"].split('-').map(Number);
 
-  return salary >= minsalary && salary<= maxsalary && age >=minage && age <=maxage;
-});
-  this.filterschemes = matchedSchemes.Schemes;
-   
+    return salary >= minSalary && salary <= maxSalary && age >= minAge && age <= maxAge;
+  });
+
+  this.filterschemes = matchedCategory ? matchedCategory.Schemes : [];
+  //  if(this.filterschemes.length===0){
+  //   this.showDangerAlert=true;
+  //   setTimeout(() => this.showDangerAlert = false, 3000);
+  //  }
+  if (this.filterschemes.length > 0) {
+    this.toastr.success('Schemes found successfully!', 'Success');
+  } else if (this.filterschemes.length===0){
+    this.toastr.error('No matching schemes found. Please try different inputs.', 'Error');
+  }
 }
 
 

@@ -76,7 +76,7 @@
     width: 0;
     height: 2px;
     border-radius: 1px; 
-    background-color: #ed1c24; 
+    background-color: #264ea4; 
     transition: width 0.3s ease-in-out;
   }
   .nav-link:hover::after,
@@ -85,7 +85,7 @@
     width: 100%;
   }
   .nav-link.active{
-    color: #ed1c24;
+    color: #264ea4;
     font-weight: 700;
   }
 

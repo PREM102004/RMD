@@ -52,76 +52,90 @@
       </alert>
     </div> -->
 
-    <div [@fadeIn] class="container d-flex justify-content-center align-items-center">
-     
-      <form #schemeForm="ngForm" (ngSubmit)="onSubmit(schemeForm)" class="form-container" novalidate>
-        <div class="row">
-          <!-- Occupation Field -->
-          <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
-            <label class="col-md-4">Occupation</label>
-            <div class="col-md-8">
-              <select name="Occupation" [(ngModel)]="formdata.Occupation" class="form-control"  required>
-                <option value="" disabled selected>Select Occupation</option>
-                <option  *ngFor="let occ of occulistpation" [value]="occ">{{ occ }}</option>
-              </select>
-            </div>
+    <div [@fadeIn] class="container d-flex justify-content-center align-items-center py-5">
+      <ng-container *ngIf="isloading">
+        <div class="loader-overlay">
+          <div class="logo-container">
+            <img src="assets/schemeSync.png" alt="Logo" class="logo">
           </div>
-    
-          <!-- Salary Field -->
-          <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
-            <label class="col-md-4">Salary</label>
-            <div class="col-md-8">
-              <input 
-                type="number" 
-                name="salary" 
-                class="form-control"
-                ngModel 
-                required
-                #salary="ngModel"
-                pattern="^[0-9]+$"
-              />
-              <div *ngIf="salary.invalid && salary.touched" class="invalid-feedback">
-                Salary is required and must be a number.
+        </div>
+      </ng-container>
+
+
+        <form #schemeForm="ngForm" (ngSubmit)="onSubmit(schemeForm)" class="form-container" novalidate>
+          <div class="row">
+            <!-- Occupation Field -->
+            <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
+              <label class="col-md-4">Occupation</label>
+              <div class="col-md-8">
+                <select name="Occupation" [(ngModel)]="formdata.Occupation" class="form-control"  required>
+                  <option value="" disabled selected>Select Occupation</option>
+                  <option  *ngFor="let occ of occulistpation" [value]="occ">{{ occ }}</option>
+                </select>
+              </div>
+            </div>
+      
+            <!-- Salary Field -->
+            <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
+              <label class="col-md-4">Salary</label>
+              <div class="col-md-8">
+                <input 
+                  type="number" 
+                  name="salary" 
+                  class="form-control"
+                  ngModel 
+                  required
+                  #salary="ngModel"
+                  pattern="^[0-9]+$"
+                />
+                <div *ngIf="salary.invalid && salary.touched" class="invalid-feedback">
+                  Salary is required and must be a number.
+                </div>
+              </div>
+            </div>
+      
+            <!-- Age Field -->
+            <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
+              <label class="col-md-4">Age</label>
+              <div class="col-md-8">
+                <input 
+                  type="number" 
+                  class="form-control"
+                  name="age" 
+                  ngModel 
+                  required
+                  #age="ngModel"
+                  (input)="limitAgeLength($event)"
+                />
+                <div *ngIf="age.invalid && age.touched" class="invalid-feedback">
+                  Age is required and should not exceed two digits.
+                </div>
               </div>
             </div>
           </div>
-    
-          <!-- Age Field -->
-          <div class="form-group mb-3 col-md-12 d-flex flex-column flex-md-row align-items-md-center">
-            <label class="col-md-4">Age</label>
-            <div class="col-md-8">
-              <input 
-                type="number" 
-                class="form-control"
-                name="age" 
-                ngModel 
-                required
-                #age="ngModel"
-                (input)="limitAgeLength($event)"
-              />
-              <div *ngIf="age.invalid && age.touched" class="invalid-feedback">
-                Age is required and should not exceed two digits.
-              </div>
-            </div>
+      
+          <!-- Submit Button -->
+          <div class="text-center mt-3">
+            <button type="submit" class="Btn-about" [disabled]="schemeForm.invalid">Find Schemes</button>
           </div>
-        </div>
-    
-        <!-- Submit Button -->
-        <div class="text-center mt-3">
-          <button type="submit" class="Btn-about" [disabled]="schemeForm.invalid">Find Schemes</button>
-        </div>
-      </form>
+        </form>
+
+      
     </div>
     
     
-    <div *ngIf="filterschemes.length">
-      <h3>Available Schemes:</h3>
-      <div *ngFor="let scheme of filterschemes">
-        <h4>{{ scheme.name }}</h4>
-        <p><strong>Benefits:</strong> {{ scheme.Benefits }}</p>
-        <p><strong>How It Works:</strong> {{ scheme["How It Works"] }}</p>
-        <p><a [href]="scheme.link" target="_blank">Apply Here</a></p>
+    <div *ngIf="filterschemes.length" class="container">
+      <h3 class="text-center mb-4">Available Schemes:</h3>
+      <div class="row">
+        <div class="col-4 col-md-4 mb-3" *ngFor="let scheme of filterschemes">
+          <div class="card shadow-lg p-3">
+            <div class="card-body">
+              <h4 class="card-title">{{ scheme.name }}</h4>
+              <p class="card-text"><strong>Benefits:</strong> {{ scheme.Benefits }}</p>
+              <p class="card-text"><strong>How It Works:</strong> {{ scheme["How It Works"] }}</p>
+              <a [href]="scheme.link" target="_blank" class="btn btn-primary">Apply Here</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  

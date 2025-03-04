@@ -33,6 +33,7 @@ export class ProductsComponent {
    occulistpation : string[]=[]
    selectedOccupation: string = '';
    showDangerAlert = false;
+   isloading :boolean=false;
    private toastr = inject(ToastrService);
     constructor(private http : HttpClient, private cd : ChangeDetectorRef){}
    
@@ -49,14 +50,13 @@ export class ProductsComponent {
       if (schemeForm.invalid) {
         return;
       }
+      this.isloading = true;
       this.formdata = schemeForm.value;
-      this.getfilterdata();
-      if (this.filterschemes.length != 0) {
-        this.toastr.success('Schemes found successfully!', 'Success');
-      } else if (this.filterschemes.length===0){
-        this.toastr.error('No matching schemes found. Please try different inputs.', 'Error');
-      }
-
+      setTimeout(() => {
+        this.getfilterdata();
+        this.isloading = false;
+      }, 1000);
+     
     }
     limitAgeLength(event: any): void {
       let input = event.target.value;

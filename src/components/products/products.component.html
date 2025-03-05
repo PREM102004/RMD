@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid bg-img-prod">
     <div class="product-head text-center">
       <h3>Scheme Sync Welcomes You</h3>
       <div class="border-bottom"></div>
@@ -85,6 +85,7 @@
                   class="form-control"
                   ngModel 
                   required
+                  placeholder="Enter your Salary"
                   #salary="ngModel"
                   pattern="^[0-9]+$"
                 />
@@ -105,6 +106,7 @@
                   ngModel 
                   required
                   #age="ngModel"
+                  placeholder="Enter your Age"
                   (input)="limitAgeLength($event)"
                 />
                 <div *ngIf="age.invalid && age.touched" class="invalid-feedback">
@@ -125,7 +127,8 @@
     
     
     <div *ngIf="filterschemes.length" class="container">
-      <h3 class="text-center mb-4">Available Schemes:</h3>
+      <h3 class="text-center">Available Schemes:</h3>
+      <div class="border-bottom"></div>
       <div class="row">
         <div class="col-4 col-md-4 mb-3" *ngFor="let scheme of filterschemes">
           <div class="card shadow-lg p-3">
@@ -138,7 +141,7 @@
             </div>
           </div>
           <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="productModalLabel">Scheme Details</h5>
@@ -146,9 +149,11 @@
                 </div>
                 <div class="modal-body">
                   <div>
-                    <p><strong>{{scheme.name}}</strong></p>
+                    <h5>{{scheme.name}}</h5>
+                    <div class="border-bottom-2"></div>
                   </div>
                    <div>
+                    <p><strong>Age :</strong> {{scheme["Age Category"]}}</p>
                     <p><strong>How It Works :</strong> {{scheme["How It Works"]}}</p>
                     <p><strong>How To Apply :</strong> {{scheme["How to Apply"]}}</p>
                    </div>
@@ -165,4 +170,5 @@
         </div>
       </div>
     </div>
+</div>
     

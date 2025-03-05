@@ -23,6 +23,10 @@
   h3 {
     font-size: 1.2rem;
     margin-top: 15px;
+    color: #ffff;
+  }
+  h1{
+    color: #ffff;
   }
   
   p {
@@ -40,15 +44,14 @@
 }
 
 .industry-bg-img {
-  background-image: url('../../assets/homepagebanner/industry.jpg'); 
+  background-image: url('../../assets/homepagebanner/bg-img.jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 50px 0; 
   height: 100%;
-  margin-bottom: 50px;
-  margin-top: 50px;/* Add padding to ensure content doesn't overlap the edges */
+  margin-top: 50px;
 }
 .border-bottom{
   width: 10%;

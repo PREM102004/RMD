@@ -1,7 +1,7 @@
 .footer{
     bottom: 0;
-    margin-top: 30px;
     padding: 10px;
+    background: linear-gradient(to right, #fffde4, #005aa7);
     border-top: 1px solid #eee;
 }
 .logo img {
@@ -16,15 +16,15 @@
 }
 .brandname h5{
     font-weight: bold;
-    color: #264ea4;
+    color: #0c47c7;
 }
 .com{
-    background-color: #eee;
+    background-color: #878181;
     font-size: 12px;
     font-weight: lighter;
 }
 .contact h5{
-    color: #264ea4;
+    color: #0c47c7;
     font-weight: bold;
     padding: 5px;
 
@@ -49,6 +49,9 @@ a:hover{
 i{
     font-size: 18px;
 }
+li{
+    text-decoration: none;
+}
 @media(max-width:768px){
     a{
         font-size: 12px;
@@ -72,7 +75,7 @@ i{
     }
     .footer{
         bottom: 0;
-        margin-top: 30px;
+
         padding: 0px;
         border-top: 1px solid #eee;
     }

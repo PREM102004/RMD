@@ -2,6 +2,7 @@
     border-bottom: 1px solid #eee;
     width: 100%;
     top: 0;
+    background: linear-gradient(to right, #fffde4, #005aa7);
     z-index: 9000;
     height: 100px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
@@ -22,7 +23,7 @@
 }
 .brandName h5{
     font-weight: bold;
-    color: #264ea4;
+    color: #0c47c7;
 }
 
    
@@ -85,7 +86,7 @@
     width: 100%;
   }
   .nav-link.active{
-    color: #264ea4;
+    color: #0c47c7;
     font-weight: 700;
   }
 

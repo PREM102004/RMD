@@ -134,9 +134,9 @@
           <div class="card shadow-lg p-3 h-100">
             <div class="card-body d-flex flex-column">
               <h4 class="card-title">{{ scheme.name }}</h4>
-              <div class="border-bottom mb-2"></div>
+              <div class="border-bottom-3"></div>
               <p class="card-text" style="font-size:15px;"><strong>Benefits:</strong> {{ scheme.Benefits }}</p>
-              <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal" (click)="openModal(scheme)">
+              <button class="Btn-submit" data-bs-toggle="modal" data-bs-target="#productModal" (click)="openModal(scheme)">
                 View More...
               </button>
             </div>
@@ -144,7 +144,6 @@
         </div>
       </div>
     
-      <!-- Modal should always be part of DOM -->
       <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
@@ -155,8 +154,8 @@
             <div class="modal-body">
               <ng-container *ngIf="selectedScheme; else noScheme">
                 <div>
-                  <h5 class="text-center">{{ selectedScheme.name }}</h5>
-                  <div class="border-bottom my-2"></div>
+                  <h5>{{ selectedScheme.name }}</h5>
+                  <div class="border-bottom-2 my-2"></div>
                 </div>
                 <div>
                   <p><strong>Age :</strong> {{ selectedScheme["Age Category"] }}</p>
@@ -168,9 +167,9 @@
                 <p class="text-center text-muted">No scheme selected</p>
               </ng-template>
             </div>
-            <div class="modal-footer d-flex justify-content-between">
-              <a *ngIf="selectedScheme" [href]="selectedScheme.link" class="btn btn-success w-100 text-center" target="_blank">Visit Site</a>
-              <button type="button" class="btn btn-secondary w-100 mt-2" data-bs-dismiss="modal">Close</button>
+            <div class="modal-footer d-flex">
+              <a *ngIf="selectedScheme" [href]="selectedScheme.link" class="btn btn-success text-center" target="_blank">Visit Site</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

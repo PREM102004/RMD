@@ -35,6 +35,7 @@ export class ProductsComponent {
   showDangerAlert = false;
   isloading: boolean = false;
   emptyScheme: boolean = false;
+  selectedScheme :any = null;
   private toastr = inject(ToastrService);
   constructor(private http: HttpClient, private cd: ChangeDetectorRef) { }
    
@@ -46,7 +47,12 @@ export class ProductsComponent {
         this.cd.markForCheck()
       })
     }
-   
+    limitAgeLength(event: any): void {
+      let input = event.target.value;
+      if (input.length > 2) {
+        event.target.value = input.slice(0, 2);
+      }
+    }
     onSubmit(schemeForm: any) {
       if (schemeForm.invalid) {
         return;
@@ -67,12 +73,7 @@ export class ProductsComponent {
         }
       }, 1000);
     }
-    limitAgeLength(event: any): void {
-      let input = event.target.value;
-      if (input.length > 2) {
-        event.target.value = input.slice(0, 2);
-      }
-    }
+   
 
   getfilterdata() {
     const { Occupation, salary, age } = this.formdata
@@ -95,10 +96,9 @@ export class ProductsComponent {
 
 
 
-openDetailsModal(){
-  
-}
-
+  openModal(scheme: any) {
+    this.selectedScheme = scheme;
+  }
     
 }
 

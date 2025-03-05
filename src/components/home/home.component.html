@@ -13,7 +13,7 @@
         <h1>Welcome to SCHEME SYNC</h1>
       </div>
         <!-- <div class="border-botttom"></div> -->
-        <p>At SCHEME SYNC, we take pride in delivering top-notch rubber and ebonite rollers, molded rubber parts, and sandblasting services, tailored to meet the diverse needs of industries like steel, paper, textile, roofing, and printing, while upholding the highest standards of quality, innovation, and customer satisfaction.</p>
+        <p>At SCHEME SYNC,we don’t just connect people to schemes—we create impact.Join us in transforming accessibility and making public services work for everyone.With a smart chatbot for instant assistance and a dedicated grievance redressal system, we put users at the center of everything we do.</p>
         <button class="Btn-about" (click)="goToAbout()">Scheme Zone...</button>
     </div>
  </div>
@@ -53,5 +53,25 @@
   </div>
   
   <app-company-types></app-company-types>
+
+<button id="chatbot-toggle" (click)="toggleChat()">💬</button>
+
+<div class="chatbot-container" *ngIf="isChatOpen">
+  <div class="chatbot-header">
+    <h4>SchemeSync Chatbot</h4>
+    <button (click)="closeChat()">&#x292C;</button>
+  </div>
+
+  <div class="chatbot-messages">
+    <div *ngFor="let message of messages" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+      {{ message.text }}
+    </div>
+  </div>
+
+  <div class="chatbot-input">
+    <input [(ngModel)]="userInput" (keypress)="onEnter($event)" placeholder="Type your message..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
 
 

@@ -131,11 +131,38 @@
           <div class="card shadow-lg p-3">
             <div class="card-body">
               <h4 class="card-title">{{ scheme.name }}</h4>
-              <p class="card-text"><strong>Benefits:</strong> {{ scheme.Benefits }}</p>
-              <p class="card-text"><strong>How It Works:</strong> {{ scheme["How It Works"] }}</p>
-              <a [href]="scheme.link" target="_blank" class="btn btn-primary">Apply Here</a>
+              <p class="card-text" style="font-size:15px;"><strong>Benefits:</strong> {{ scheme.Benefits }}</p>
+              <!-- <p class="card-text"><strong>How It Works:</strong> {{ scheme["How It Works"] }}</p>
+              <a [href]="scheme.link" target="_blank" class="btn btn-primary">Apply Here</a> -->
+              <button class="Btn-submit" data-bs-toggle="modal" data-bs-target="#productModal">View More...</button>
+            </div>
+          </div>
+          <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="productModalLabel">Scheme Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <p><strong>{{scheme.name}}</strong></p>
+                  </div>
+                   <div>
+                    <p><strong>How It Works :</strong> {{scheme["How It Works"]}}</p>
+                    <p><strong>How To Apply :</strong> {{scheme["How to Apply"]}}</p>
+                   </div>
+                 
+                  
+                </div>
+                <div class="modal-footer">
+                  <a [href]=scheme.link class="btn btn-success" target="_blank">Visit Site</a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    

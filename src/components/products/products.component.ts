@@ -88,30 +88,11 @@ getfilterdata(){
 
 
 
-    searchProducts(event: Event): void {
-      const searchTerm = (event.target as HTMLInputElement).value.trim().toLowerCase();
+openDetailsModal(){
   
-      // Reset to full product list if search input is cleared
-      if (!searchTerm) {
-        this.filteredProductList = { ...this.productList };
-        return;
-      }
-  
-      // Filter the products based on the search term
-      this.filteredProductList = Object.fromEntries(
-        Object.entries(this.productList).map(([industry, products]) => [
-          industry,
-          products.filter(product =>
-            product.name.toLowerCase().includes(searchTerm)
-          )
-        ]).filter(([_, products]) => products.length > 0) // Remove industries with no matching products
-      );
-    }
-    isFilteredListEmpty(): boolean {
-      return Object.keys(this.filteredProductList).length === 0;
-    }
+}
 
-    keepOriginalOrder = () => 0;
+    
 }
 
 

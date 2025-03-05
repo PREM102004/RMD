@@ -10,17 +10,17 @@
             {
               "name": "PM Kisan Samman Nidhi Yojana",
               "Age Category": "18-60 years",
-              "Benefits": "Provides financial assistance of ₹6000 per year to small and marginal farmers.",
-              "How It Works": "Farmers receive three equal installments of ₹2000 directly into their bank accounts every four months.",
-              "How to Apply": "Visit PM Kisan portal and register online.",
+              "Benefits": "Provides financial assistance of ₹6000 per year to small and marginal farmers. This scheme helps farmers cover agricultural expenses such as seeds, fertilizers, and equipment. It ensures a steady income source to support their livelihood. The direct benefit transfer (DBT) mechanism eliminates middlemen and ensures transparency.",
+              "How It Works": "Farmers receive three equal installments of ₹2000 directly into their bank accounts every four months. The funds are transferred through the Direct Benefit Transfer (DBT) system to avoid delays. Eligible farmers are identified through state government databases and linked with Aadhaar for verification. The scheme benefits millions of farmers by providing consistent financial support for their agricultural activities.",
+              "How to Apply": "Visit PM Kisan portal and register online. Submit Aadhaar, bank details, and land ownership proof. Verification is conducted by the local agricultural department. Once approved, farmers start receiving payments in their linked bank accounts.",
               "link": "https://pmkisan.gov.in"
             },
             {
               "name": "Crop Insurance Scheme",
               "Age Category": "18-70 years",
-              "Benefits": "Provides financial protection against crop losses due to natural calamities.",
-              "How It Works": "Farmers pay a minimal premium and receive compensation for losses.",
-              "How to Apply": "Apply through the agricultural office or online portal.",
+              "Benefits": "Provides financial protection against crop losses due to natural calamities. Ensures stability in farmers' incomes even during unpredictable weather conditions. Covers risks such as drought, floods, pests, and diseases. Encourages farmers to invest in modern farming techniques without fear of financial loss.",
+              "How It Works": "Farmers pay a minimal premium and receive compensation for losses. The government subsidizes a large portion of the premium to make it affordable. Compensation is provided based on damage assessment reports conducted by agricultural officers. The claim amount is directly transferred to farmers’ bank accounts.",
+              "How to Apply": "Apply through the agricultural office or online portal. Submit land ownership proof and crop details. Pay the required premium through banks or government-approved insurance providers. After verification, farmers receive policy details and coverage confirmation.",
               "link": "https://www.agri-insurance.gov.in"
             }
           ]
@@ -32,17 +32,17 @@
             {
               "name": "Agricultural Infrastructure Fund",
               "Age Category": "25-60 years",
-              "Benefits": "Supports farmers in building post-harvest management infrastructure.",
-              "How It Works": "Provides subsidized loans for storage and processing units.",
-              "How to Apply": "Apply via the Agricultural Infrastructure Fund portal.",
+              "Benefits": "Supports farmers in building post-harvest management infrastructure. Encourages investments in warehouses, cold storage, and processing units. Helps reduce post-harvest losses and improve supply chain efficiency. Provides better market access and storage facilities, leading to improved profits.",
+              "How It Works": "Provides subsidized loans for storage and processing units. Farmers and agricultural entrepreneurs can apply for credit facilities at reduced interest rates. The government offers interest subvention and credit guarantee support. Loans can be used for developing warehouses, food processing units, and other essential infrastructure.",
+              "How to Apply": "Apply via the Agricultural Infrastructure Fund portal. Submit business plans and financial projections. Provide ownership documents for land or storage facilities. Upon approval, receive loan disbursement with government-backed subsidies.",
               "link": "https://agriinfra.dac.gov.in"
             },
             {
               "name": "Fasal Bima Yojana",
               "Age Category": "18-65 years",
-              "Benefits": "Offers crop insurance against natural calamities and pests.",
-              "How It Works": "Farmers pay a small premium and get compensation in case of crop damage.",
-              "How to Apply": "Register online on the PMFBY portal.",
+              "Benefits": "Offers crop insurance against natural calamities and pests. Reduces financial risk for farmers in case of crop failure. Provides security to farmers by covering unexpected losses. Encourages more investments in farming by reducing uncertainties.",
+              "How It Works": "Farmers pay a small premium and get compensation in case of crop damage. The claim is processed based on pre-assessed yield loss and weather conditions. The scheme uses satellite imaging and remote sensing for accurate loss assessment. Farmers receive the claim amount directly in their bank accounts.",
+              "How to Apply": "Register online on the PMFBY portal. Provide land details and crop information. Pay the premium through the official channels. Upon verification, receive the policy and coverage confirmation.",
               "link": "https://pmfby.gov.in"
             }
           ]
@@ -59,17 +59,17 @@
             {
               "name": "National Scholarship Scheme",
               "Age Category": "18-25 years",
-              "Benefits": "Provides financial aid for higher education students from economically weaker sections.",
-              "How It Works": "Covers tuition fees and provides monthly stipends.",
-              "How to Apply": "Apply on the National Scholarship Portal.",
+              "Benefits": "Provides financial aid for higher education students from economically weaker sections. Helps cover tuition fees, books, and accommodation costs. Encourages meritorious students to continue their education without financial constraints. Reduces dropout rates and promotes higher education accessibility.",
+              "How It Works": "Covers tuition fees and provides monthly stipends. Scholarships are awarded based on academic performance and financial background. The funds are directly transferred to students’ bank accounts. Renewal is required annually based on academic progress and eligibility criteria.",
+              "How to Apply": "Apply on the National Scholarship Portal. Submit necessary documents like income certificate, previous academic records, and Aadhaar details. Fill out the online application form and upload the required documents. After verification, the scholarship amount is credited to the student’s bank account.",
               "link": "https://scholarships.gov.in"
             },
             {
               "name": "Education Loan Subsidy Scheme",
               "Age Category": "18-30 years",
-              "Benefits": "Offers interest subsidies on educational loans for eligible students.",
-              "How It Works": "Government pays the interest during the study period.",
-              "How to Apply": "Apply through banks participating in the scheme.",
+              "Benefits": "Offers interest subsidies on educational loans for eligible students. Reduces financial burden on students who take loans for higher studies. Encourages students to pursue professional and technical courses. Helps students from low-income families access quality education without excessive debt.",
+              "How It Works": "Government pays the interest during the study period. Students repay only the principal amount after completing their education. The subsidy applies only to loans taken from government-recognized banks. Students must meet the eligibility criteria based on family income and academic course.",
+              "How to Apply": "Apply through banks participating in the scheme. Submit necessary documents like income proof, admission letter, and loan approval letter. Fill in the subsidy application form at the respective bank. Upon verification, the government credits the interest subsidy to the bank account.",
               "link": "https://www.studentloans.gov.in"
             }
           ]
@@ -81,17 +81,17 @@
             {
               "name": "Skill Development Training Program",
               "Age Category": "18-35 years",
-              "Benefits": "Provides free skill development training to students and young professionals.",
-              "How It Works": "Covers tuition fees and offers placement assistance.",
-              "How to Apply": "Register on the Skill India Portal.",
+              "Benefits": "Provides free skill development training to students and young professionals. Helps improve employability by offering hands-on training in various fields. Supports individuals in gaining technical and vocational skills. Enhances career prospects by connecting trained individuals with job opportunities.",
+              "How It Works": "Covers tuition fees and offers placement assistance. Students can choose from multiple courses, including IT, healthcare, and manufacturing. Training programs are conducted in government-affiliated centers and online platforms. Certification is provided upon successful completion of the course.",
+              "How to Apply": "Register on the Skill India Portal. Select the desired skill training program. Attend training sessions at designated centers or online platforms. Receive certification and placement support upon course completion.",
               "link": "https://skillindia.gov.in"
             },
             {
               "name": "Startup India Seed Fund",
               "Age Category": "21-30 years",
-              "Benefits": "Funding support for students and graduates to start their own ventures.",
-              "How It Works": "Provides seed funding and incubation support.",
-              "How to Apply": "Apply via the Startup India portal.",
+              "Benefits": "Funding support for students and graduates to start their own ventures. Provides initial capital for idea validation, prototype development, and market entry. Encourages entrepreneurship among young innovators. Helps in scaling up business operations with mentoring and incubation support.",
+              "How It Works": "Provides seed funding and incubation support. Entrepreneurs receive grants and loans based on their startup plans. Startups are guided through mentorship programs for business growth. Funds are disbursed in multiple stages, depending on progress and milestones achieved.",
+              "How to Apply": "Apply via the Startup India portal. Submit a detailed business proposal with financial projections. Attend the evaluation process conducted by industry experts. Upon approval, receive funding and incubation support.",
               "link": "https://www.startupindia.gov.in"
             }
           ]
@@ -108,17 +108,17 @@
             {
               "name": "Pradhan Mantri Vaya Vandana Yojana",
               "Age Category": "60-80 years",
-              "Benefits": "Provides a guaranteed pension plan for senior citizens.",
-              "How It Works": "Retirees invest a lump sum and receive a fixed pension for 10 years.",
-              "How to Apply": "Apply at LIC or authorized banks.",
+              "Benefits": "Provides a guaranteed pension plan for senior citizens. Offers financial security with fixed monthly income. Helps retirees manage expenses without financial stress. Ensures a steady source of earnings even after retirement.",
+              "How It Works": "Retirees invest a lump sum and receive a fixed pension for 10 years. The scheme offers an assured return on investment. Pension payments are made monthly, quarterly, half-yearly, or annually. At maturity, the principal amount is returned to the investor.",
+              "How to Apply": "Visit LIC or authorized banks to apply. Fill out the application form with necessary details. Submit identity proof, age proof, and investment amount. Receive confirmation and start receiving pension benefits.",
               "link": "https://licindia.in"
             },
             {
               "name": "Senior Citizen Savings Scheme",
               "Age Category": "60-75 years",
-              "Benefits": "Provides safe investment options with high interest rates.",
-              "How It Works": "Retirees deposit savings and receive quarterly interest payouts.",
-              "How to Apply": "Apply at post offices or banks.",
+              "Benefits": "Provides safe investment options with high interest rates. Offers better returns compared to regular savings accounts. Ensures financial stability for senior citizens post-retirement. Allows early withdrawal with nominal penalties in case of emergencies.",
+              "How It Works": "Retirees deposit savings and receive quarterly interest payouts. The interest rate is revised periodically by the government. The investment tenure is five years, extendable by three years. Premature withdrawal is allowed after one year with applicable deductions.",
+              "How to Apply": "Visit a post office or bank offering the scheme. Fill out the prescribed application form. Provide KYC documents, age proof, and a photograph. Deposit the minimum required amount and receive an account certificate.",
               "link": "https://www.indiapost.gov.in"
             }
           ]
@@ -130,17 +130,17 @@
             {
               "name": "Varishtha Pension Bima Yojana",
               "Age Category": "60-80 years",
-              "Benefits": "Offers pension benefits with an assured interest rate.",
-              "How It Works": "Provides monthly pensions based on a one-time premium deposit.",
-              "How to Apply": "Apply through LIC or government banks.",
+              "Benefits": "Offers pension benefits with an assured interest rate. Provides a stable source of income for senior citizens. Ensures financial security with a guaranteed return on investment. Offers flexibility in pension payout frequency.",
+              "How It Works": "Provides monthly pensions based on a one-time premium deposit. The pension is paid as per the chosen frequency. The principal amount is refunded upon maturity or to the nominee in case of demise. The scheme is backed by the government for added security.",
+              "How to Apply": "Apply through LIC or government banks. Fill out the application form with personal details. Submit identity and age proof along with the investment amount. Receive policy documents and start receiving pension payouts.",
               "link": "https://licindia.in"
             },
             {
               "name": "Healthcare Insurance for Senior Citizens",
               "Age Category": "60-85 years",
-              "Benefits": "Provides health insurance with coverage for critical illnesses.",
-              "How It Works": "Covers hospitalization expenses and medical costs.",
-              "How to Apply": "Register through insurance providers or government schemes.",
+              "Benefits": "Provides health insurance with coverage for critical illnesses. Reduces financial burden on hospitalization and medical expenses. Covers pre-existing diseases after a waiting period. Includes cashless treatment options at network hospitals.",
+              "How It Works": "Covers hospitalization expenses and medical costs. The insurance policy includes coverage for surgeries and post-hospitalization care. Offers annual health check-ups and preventive healthcare benefits. Premiums vary based on coverage and age of the policyholder.",
+              "How to Apply": "Register through insurance providers or government schemes. Compare plans and select the suitable policy. Fill out the application form and submit medical history documents. Make the premium payment and receive policy details.",
               "link": "https://www.pmjay.gov.in"
             }
           ]
@@ -157,17 +157,17 @@
             {
               "name": "Teachers Welfare Fund",
               "Age Category": "25-50 years",
-              "Benefits": "Provides financial assistance for teachers' professional development.",
-              "How It Works": "Grants for training and research opportunities.",
-              "How to Apply": "Apply through the Ministry of Education portal.",
+              "Benefits": "Provides financial assistance for teachers' professional development. Supports skill enhancement programs to improve teaching quality. Offers financial aid for attending national and international conferences. Helps cover expenses for research publications and higher education.",
+              "How It Works": "Teachers can apply for grants based on their professional needs. Funds are allocated for specific purposes like training, research, and workshops. The program prioritizes applicants based on experience and contribution to education. Disbursements are monitored to ensure utilization for academic purposes.",
+              "How to Apply": "Visit the Ministry of Education portal and log in. Fill out the online application form with required details. Upload necessary documents, including proof of employment. Submit the application and track the status online.",
               "link": "https://education.gov.in"
             },
             {
               "name": "Housing Loan Subsidy for Teachers",
               "Age Category": "30-55 years",
-              "Benefits": "Offers subsidies on housing loans for teachers.",
-              "How It Works": "Teachers receive reduced interest rates on home loans.",
-              "How to Apply": "Apply through national banks or government portals.",
+              "Benefits": "Offers subsidies on housing loans for teachers. Reduces the financial burden by lowering interest rates. Encourages teachers to purchase or construct their own homes. Provides long-term repayment options with flexible tenure.",
+              "How It Works": "Eligible teachers apply for a home loan through approved banks. The government subsidizes a portion of the interest rate. Loan repayment is deducted monthly from salary at reduced interest. Subsidies may vary based on loan amount and tenure.",
+              "How to Apply": "Check eligibility on the government portal or national banks. Apply for a home loan through a registered bank or housing finance company. Submit salary proof, employment certificate, and property details. Complete the loan agreement and receive subsidy benefits.",
               "link": "https://www.nhb.gov.in"
             }
           ]
@@ -179,17 +179,17 @@
             {
               "name": "Higher Education Research Grants",
               "Age Category": "30-60 years",
-              "Benefits": "Provides financial assistance for teachers conducting research.",
-              "How It Works": "Grants for publishing papers, attending conferences, and research projects.",
-              "How to Apply": "Apply via the UGC portal.",
+              "Benefits": "Provides financial assistance for teachers conducting research. Supports academic projects in various disciplines. Encourages publication of research in recognized journals. Enables participation in global academic conferences.",
+              "How It Works": "Teachers submit research proposals for funding approval. Grants are awarded based on the research scope and impact. Funds can be used for materials, software, and travel for research purposes. Progress reports must be submitted to continue receiving grants.",
+              "How to Apply": "Register on the UGC portal and create a profile. Submit a detailed research proposal with objectives and methodology. Attach supporting documents, including teaching and research experience. Await approval and track the funding process.",
               "link": "https://www.ugc.ac.in"
             },
             {
               "name": "Retirement Benefits for Teachers",
               "Age Category": "50-65 years",
-              "Benefits": "Ensures pension and gratuity benefits for retiring teachers.",
-              "How It Works": "Teachers receive monthly pensions and lump sum gratuity.",
-              "How to Apply": "Apply through the education department or pension fund office.",
+              "Benefits": "Ensures pension and gratuity benefits for retiring teachers. Provides a steady source of income post-retirement. Includes lump sum gratuity based on years of service. Offers health benefits and medical allowances for retirees.",
+              "How It Works": "Teachers contribute to a pension fund during their service period. Upon retirement, they receive monthly pension payments. Gratuity is calculated based on service tenure and last drawn salary. Additional benefits such as medical coverage are included in certain plans.",
+              "How to Apply": "Obtain the retirement benefits application from the education department. Fill out the required details, including service history and pension account. Submit the form along with identity proof and salary records. Receive pension approval and monthly disbursement updates.",
               "link": "https://www.pensionersportal.gov.in"
             }
           ]
@@ -206,17 +206,17 @@
             {
               "name": "MGNREGA",
               "Age Category": "18-60 years",
-              "Benefits": "Provides guaranteed 100 days of wage employment to rural unemployed individuals.",
-              "How It Works": "Rural unemployed individuals can work on government projects.",
-              "How to Apply": "Apply at the Gram Panchayat office.",
+              "Benefits": "Provides guaranteed 100 days of wage employment to rural unemployed individuals. Helps improve rural infrastructure through employment projects. Supports unskilled workers with a steady income source. Ensures timely wage payments to laborers under the scheme.",
+              "How It Works": "Individuals register with the Gram Panchayat for job allocation. Employment is provided in various public works projects. Workers receive wages directly in their bank accounts. Work is assigned based on local development needs and available workforce.",
+              "How to Apply": "Visit the local Gram Panchayat office and collect the application form. Fill out personal and employment details in the form. Submit identity proof, bank details, and address verification. Receive job card approval and start working on assigned projects.",
               "link": "https://nrega.nic.in"
             },
             {
               "name": "Skill India Mission",
               "Age Category": "18-45 years",
-              "Benefits": "Provides vocational training and employment opportunities.",
-              "How It Works": "Free skill training programs with job placement support.",
-              "How to Apply": "Apply through the Skill India portal.",
+              "Benefits": "Provides vocational training and employment opportunities. Enhances skill development through industry-relevant courses. Increases job placement chances in various sectors. Offers certifications recognized by employers nationwide.",
+              "How It Works": "Candidates enroll in training programs at government-approved centers. Courses are designed for various trades and industries. Upon completion, candidates receive certificates and job placement assistance. Companies collaborate with the scheme to hire trained professionals.",
+              "How to Apply": "Visit the Skill India portal and select a suitable course. Register online with personal and educational details. Choose a nearby training center and attend sessions. Complete the course and receive certification with job placement support.",
               "link": "https://skillindia.gov.in"
             }
           ]
@@ -228,17 +228,17 @@
             {
               "name": "Self-Employment Loan Scheme",
               "Age Category": "25-50 years",
-              "Benefits": "Offers loans for unemployed individuals to start small businesses.",
-              "How It Works": "Provides low-interest loans with flexible repayment options.",
-              "How to Apply": "Apply through nationalized banks or financial institutions.",
+              "Benefits": "Offers loans for unemployed individuals to start small businesses. Provides capital to set up micro and small enterprises. Encourages self-reliance and entrepreneurship. Supports women entrepreneurs with special financial incentives.",
+              "How It Works": "Applicants submit business plans to financial institutions. Loans are sanctioned based on viability and repayment ability. Government provides interest subsidies to reduce financial burden. Repayment terms are flexible, with extended tenure for business growth.",
+              "How to Apply": "Check eligibility criteria on the MSME portal. Apply for a loan through a registered bank or financial institution. Submit a detailed business plan and required documents. Receive loan approval and start a business with financial support.",
               "link": "https://msme.gov.in"
             },
             {
               "name": "Unemployment Allowance Scheme",
               "Age Category": "18-45 years",
-              "Benefits": "Provides financial assistance to unemployed individuals actively seeking jobs.",
-              "How It Works": "Monthly stipend for a limited duration while searching for employment.",
-              "How to Apply": "Apply via the Employment Exchange office.",
+              "Benefits": "Provides financial assistance to unemployed individuals actively seeking jobs. Ensures a minimum income source for job seekers. Helps cover basic expenses during the job search period. Encourages skill enhancement by linking to training programs.",
+              "How It Works": "Eligible candidates register with the employment exchange. Monthly allowance is provided based on verification of unemployment status. The scheme operates for a fixed duration until the individual secures employment. Beneficiaries must actively participate in job fairs and skill programs.",
+              "How to Apply": "Register on the National Career Service (NCS) portal. Submit unemployment proof, educational qualifications, and bank details. Attend periodic verification meetings to maintain eligibility. Receive monthly financial assistance until employment is secured.",
               "link": "https://www.ncs.gov.in"
             }
           ]

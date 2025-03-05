@@ -14,6 +14,6 @@ export class AboutComponent {
   constructor(private router : Router){}
 
   goToContact(){
-    this.router.navigateByUrl('/contact');
+    this.router.navigateByUrl('/products');
   }
 }

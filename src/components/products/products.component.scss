@@ -13,6 +13,7 @@
 
 .container-fluid{
     padding: 20px;
+    
 }
 .heading{
     margin: 25px;
@@ -225,7 +226,7 @@
 }
 .card {
   width: 100%;
-  height: 390px;
+  height: 360px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
@@ -233,7 +234,14 @@
 .card:hover {
   transform: scale(1.05);
 }
-
+.alert {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #ffcc00; /* Yellowish background */
+  color: #333;
+  border-radius: 5px;
+}
 .btn-primary {
   background-color: #007bff;
   border: none;

@@ -170,5 +170,10 @@
         </div>
       </div>
     </div>
+    <ng-container *ngIf="emptyScheme">
+      <div class="alert alert-warning text-center mt-4" role="alert">
+        No schemes available at the moment! Please check back later.
+      </div>
+    </ng-container>
 </div>
     

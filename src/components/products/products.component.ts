@@ -22,20 +22,21 @@ import { animate, style, transition, trigger } from '@angular/animations';
   ])]
 })
 export class ProductsComponent {
-     productList:{ [key: string]: any[] }={};
-     toggleProductView:boolean=false;
-  activeIndustry: string | null='';
+  productList: { [key: string]: any[] } = {};
+  toggleProductView: boolean = false;
+  activeIndustry: string | null = '';
   filteredProductList: { [key: string]: any[] } = {};
-   searchTerm: string = '';
-   datascheme :any[]=[]
-   formdata = {Occupation : '',salary : 0,age : 0}
-   filterschemes : any[]=[]
-   occulistpation : string[]=[]
-   selectedOccupation: string = '';
-   showDangerAlert = false;
-   isloading :boolean=false;
-   private toastr = inject(ToastrService);
-    constructor(private http : HttpClient, private cd : ChangeDetectorRef){}
+  searchTerm: string = '';
+  datascheme: any[] = []
+  formdata = { Occupation: '', salary: 0, age: 0 }
+  filterschemes: any[] = []
+  occulistpation: string[] = []
+  selectedOccupation: string = '';
+  showDangerAlert = false;
+  isloading: boolean = false;
+  emptyScheme: boolean = false;
+  private toastr = inject(ToastrService);
+  constructor(private http: HttpClient, private cd: ChangeDetectorRef) { }
    
     ngOnInit():void{
       this.http.get<any>('assets/products.json').subscribe(response =>{
@@ -52,39 +53,45 @@ export class ProductsComponent {
       }
       this.isloading = true;
       this.formdata = schemeForm.value;
+
       setTimeout(() => {
         this.getfilterdata();
         this.isloading = false;
+        this.emptyScheme = this.filterschemes.length === 0;
+        if (this.emptyScheme) {
+          setTimeout(() => {
+            this.emptyScheme = false;
+            schemeForm.reset();
+            this.formdata = { Occupation: '', salary: 0, age: 0 };
+          }, 3000);
+        }
       }, 1000);
-     
     }
     limitAgeLength(event: any): void {
       let input = event.target.value;
       if (input.length > 2) {
-        event.target.value = input.slice(0, 2); // Restrict to two digits
+        event.target.value = input.slice(0, 2);
       }
     }
 
-getfilterdata(){
-  const {Occupation , salary,age} = this.formdata
-   const occupationData =this.datascheme.find(occ => occ.Occupation == Occupation);
+  getfilterdata() {
+    const { Occupation, salary, age } = this.formdata
+    const occupationData = this.datascheme.find(occ => occ.Occupation == Occupation);
+    if (!occupationData) {
+      this.filterschemes = [];
+      return;
+    }
 
-   if (!occupationData) {
-    this.filterschemes = [];
-    return;
-  }
-
-  
   const matchedCategory = occupationData.Categories.find((category: any) => {
-    const [minSalary, maxSalary] = category["Salary Range"].split('-').map(Number);
-    const [minAge, maxAge] = category["Age Range"].split('-').map(Number);
+      const [minSalary, maxSalary] = category["Salary Range"].split('-').map(Number);
+      const [minAge, maxAge] = category["Age Range"].split('-').map(Number);
 
-    return salary >= minSalary && salary <= maxSalary && age >= minAge && age <= maxAge;
-  });
+      return salary >= minSalary && salary <= maxSalary && age >= minAge && age <= maxAge;
+    });
 
-  this.filterschemes = matchedCategory ? matchedCategory.Schemes : [];
- 
-}
+    this.filterschemes = matchedCategory ? matchedCategory.Schemes : [];
+
+  }
 
 
 

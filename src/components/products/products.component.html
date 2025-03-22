@@ -3,54 +3,6 @@
       <h3>Scheme Sync Welcomes You</h3>
       <div class="border-bottom"></div>
     </div>
-    <!-- <div *ngIf="isFilteredListEmpty()" class="no-results">
-        <p>No products found for the search term.</p>
-      </div>
-    <accordion *ngIf="!isFilteredListEmpty()">
-        <div  *ngFor="let industry of filteredProductList | keyvalue:keepOriginalOrder">
-      <accordion-group
-        [isOpen]="true"
-        style="margin-bottom: 10px;">
-          <button style="border: none !important;width: 100%;"
-          class="btn btn-block justify-content-between d-flex w-100  shadow-none accordianbtn" 
-          accordion-heading type="button">
-          <div class="pull-left float-left detailsTitle">{{ industry.key}}</div>
-          <div class="pull-right float-right">
-            <i class="fas fa-chevron-down"></i>
-          </div>
-        </button>
-        <div class="productItem row" *ngFor="let product of industry.value"> -->
-          <!-- Left side: Image -->
-          <!-- <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 image-section">
-            <img [src]="product.image" alt="{{ product.name }}" class="product-image" width="100%" height="300px" />
-          </div> -->
-          <!-- Right side: Details -->
-          <!-- <div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 product-details">
-            <div class="productName">
-              <h5>{{ product.name }}</h5>
-            </div>
-            <div class="product-desc">
-              <p>{{ product.description }}</p>
-            </div>
-            <div class="enquiry-section">
-                <a
-                  href="https://wa.me/9080849618?text=Hi,%20I'm%20interested%20in%20{{product.name}}"
-                  target="_blank"
-                  class="watsap-btn"
-                >
-                  <i class="fab fa-whatsapp"></i> WhatsApp Us for Enquiries
-                </a>
-              </div>
-          </div>
-        </div>
-      </accordion-group>
-    </div>
-    </accordion> -->
-    <!-- <div *ngIf="filterschemes.length === 0 && formdata.Occupation">
-      <alert *ngIf="showDangerAlert" type="danger" (onClosed)="showDangerAlert = false">
-        No matching schemes found. Please try different inputs.
-      </alert>
-    </div> -->
 
     <div [@fadeIn] class="container d-flex justify-content-center align-items-center py-5">
       <ng-container *ngIf="isloading">

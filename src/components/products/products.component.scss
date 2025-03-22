@@ -176,15 +176,7 @@
   }
 }
 
-.modal-dialog {
-  max-width: 85vw; /* Set width to 90% of the viewport */
-  height: auto;
-}
-.modal-header {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: white;
-  border-radius: 15px;
-}
+
 
 .border-bottom-2{
   width: 30%;
@@ -203,20 +195,7 @@
 .btn-close {
   filter: invert(1); 
 }
-.modal-content {
-  padding: 20px;
-}
-.modal.fade .modal-dialog {
-  transform: scale(0.7);
-  opacity: 0;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
 
-/* When modal is shown, scale up smoothly */
-.modal.show .modal-dialog {
-  transform: scale(1);
-  opacity: 1;
-}
 
   @media (max-width: 768px) {
     .form-container {

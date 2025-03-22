@@ -37,9 +37,89 @@
           </ul>
        </div>
        <div class="catalogue">
-        <a href="../assets/complaintform.pdf" class="catalogue-download">
+        <a data-bs-toggle="modal" data-bs-target="#complaintform" class="catalogue-download">
             Grievance
         </a>
+       </div>
+       <div class="modal fade" id="complaintform" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="productModalLabel">Complaint Form</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <form [formGroup]="complaintForm" (ngSubmit)="onSubmit()">
+                  <div class="row">
+                     <div class="mb-3 col-6">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" formControlName="name">
+                        <div class="text-danger" *ngIf="complaintForm.controls['name'].invalid && complaintForm.controls['name'].touched">
+                          Name is required!
+                        </div>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" id="age" class="form-control" formControlName="age">
+                        <div class="text-danger" *ngIf="complaintForm.controls['age'].invalid && complaintForm.controls['age'].touched">
+                          Age must be between 18 and 80!
+                        </div>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" formControlName="email">
+                        <div class="text-danger" *ngIf="complaintForm.controls['email'].invalid && complaintForm.controls['email'].touched">
+                          Enter a valid email!
+                        </div>
+                      </div>
+                  
+                      <!-- Phone -->
+                      <div class="mb-3 col-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" id="phone" class="form-control" formControlName="phone">
+                        <div class="text-danger" *ngIf="complaintForm.controls['phone'].invalid && complaintForm.controls['phone'].touched">
+                          Enter a valid 10-digit phone number!
+                        </div>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="schemedetails" class="form-label">Scheme related to Complaint/Grievance</label>
+                        <textarea id="schemedetails" class="form-control" rows="4" formControlName="schemedetails"></textarea>
+                        <div class="text-danger" *ngIf="complaintForm.controls['schemedetails'].invalid && complaintForm.controls['schemedetails'].touched">
+                          Minimum 10 characters required!
+                        </div>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="description" class="form-label">Description for Complaint/Grievance</label>
+                        <textarea id="description" class="form-control" rows="4" formControlName="description"></textarea>
+                        <div class="text-danger" *ngIf="complaintForm.controls['description'].invalid && complaintForm.controls['description'].touched">
+                         Enter Valid Description!
+                        </div>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="complaintinfo" class="form-label">Complaint/Grievance Information</label>
+                        <select id="complaintinfo" class="form-select" formControlName="complaintinfo">
+                          <option value="" disabled selected>Select</option>
+                          <option value="Difficulty in applying for a Scheme">Difficulty in applying for a Scheme</option>
+                          <option value="Errors in eligibility assessment">Errors in eligibility assessment</option>
+                          <option value="Application rejection without proper reason">Application rejection without proper reason</option>
+                          <option value="Delayed response from authorities">Delayed response from authorities</option>
+                          <option value="Website/technical issue">Website/technical issue</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <div class="text-danger" *ngIf="complaintForm.controls['complaintinfo'].invalid && complaintForm.controls['complaintinfo'].touched">
+                          Please select a category.
+                        </div>                       
+                      </div>
+                  </div>                
+              
+             <div class="modal-footer d-flex">
+               <button type="submit" class="btn btn-success"  data-bs-dismiss="modal" aria-label="Close">Submit</button>
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             </div>
+            </form>
+         </div>
+           </div>
+         </div>
        </div>
     </div>
  </nav>

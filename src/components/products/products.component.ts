@@ -7,6 +7,7 @@ import { AlertModule } from 'ngx-bootstrap/alert';
 import { ToastrService } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { UserinfoService } from '../../services/userinfo.service';
 
 @Component({
   selector: 'app-products',
@@ -37,7 +38,7 @@ export class ProductsComponent {
   emptyScheme: boolean = false;
   selectedScheme :any = null;
   private toastr = inject(ToastrService);
-  constructor(private http: HttpClient, private cd: ChangeDetectorRef) { }
+  constructor(private http: HttpClient, private cd: ChangeDetectorRef,private adduser : UserinfoService) { }
    
     ngOnInit():void{
       this.http.get<any>('assets/products.json').subscribe(response =>{
@@ -45,7 +46,8 @@ export class ProductsComponent {
         this.occulistpation =this.datascheme.map((occ) => occ.Occupation);
         this.filteredProductList = { ...this.productList };
         this.cd.markForCheck()
-      })
+      }) 
+     
     }
     limitAgeLength(event: any): void {
       let input = event.target.value;

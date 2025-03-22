@@ -1,0 +1,23 @@
+.modal-dialog {
+    max-width: 85vw !important; /* Set width to 90% of the viewport */
+    height: auto !important;
+  }
+  .modal-header {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    border-radius: 15px;
+  }
+  .modal-content {
+    padding: 20px;
+  }
+  .modal.fade .modal-dialog {
+    transform: scale(0.7) !important;
+    opacity: 0 !important;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out !important;
+  }
+  
+  /* When modal is shown, scale up smoothly */
+  .modal.show .modal-dialog {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+  }

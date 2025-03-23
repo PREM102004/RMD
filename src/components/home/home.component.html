@@ -14,9 +14,42 @@
       </div>
         <!-- <div class="border-botttom"></div> -->
         <p>At SCHEME SYNC,we don’t just connect people to schemes—we create impact.Join us in transforming accessibility and making public services work for everyone.With a smart chatbot for instant assistance and a dedicated grievance redressal system, we put users at the center of everything we do.</p>
-        <button class="Btn-about" (click)="goToAbout()">Scheme Zone...</button>
+        <button class="Btn-about"  data-bs-toggle="modal" data-bs-target="#statusmodal" >Track Your Complaint</button>
+        <div class="modal fade" id="statusmodal" tabindex="-1" aria-labelledby="StatusModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="statusModalLabel">Complaint Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <h4 class="text-center">Enter your Reference ID</h4>
+              <input type="text" [(ngModel)]="referenceIdInput" class="form-control" placeholder="Enter Reference ID" />
+
+         
+              <button class="btn btn-primary mt-2 w-100" (click)="fetchComplaintData()">Check Status</button>
+              <div *ngIf="complaintData" class="mt-3 p-3 border rounded">
+                <h5>Complaint Details</h5>
+                <p><strong>Name:</strong> {{ complaintData.name }}</p>
+                <p><strong>Email:</strong> {{ complaintData.email }}</p>
+                <p><strong>Complaint:</strong> {{ complaintData.complaint }}</p>
+                <p><strong>Status:</strong> {{ complaintData.status }}</p>
+              </div>
+      
+      
+              <p *ngIf="errorMessage" class="text-danger mt-2">{{ errorMessage }}</p>
+      
+            </div>
+              </div>
+              <div class="modal-footer d-flex">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
- </div>
+ 
  
   
   <!-- sand blasting banner -->

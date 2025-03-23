@@ -34,6 +34,38 @@
              <li class="nav-item">
                 <a class="nav-link" (click)="isNavbarCollapsed = true" [routerLink]="['/products']" routerLinkActive="active">Schemes</a>
              </li>
+             <li class="nav-item">
+               <a class="nav-link"  routerLinkActive="active" (click)="togglePasswordInput()">Admin</a>
+               <div *ngIf="showPasswordInput" class="adminAreaI">
+                  <input
+                    type="password"
+                    [(ngModel)]="password"
+                    placeholder="Enter password"
+                  />
+                  <button
+                    class="btn btn-primary"
+                    style="
+                      margin-left: 4px;
+                      padding: 3px 14px !important;
+                      background-color: #0054ae !important;
+                      transition: background 0.3s ease;
+                      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                      border: none;
+                    "
+                    (click)="checkPassword()"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <button *ngIf="adminSuccess" style="  margin-left: 4px;
+                padding: 3px 14px !important;
+                background-color: #0054ae !important;
+                transition: background 0.3s ease;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                border: none;" (click)="logoutAdmin()"> 
+                 Logout
+                </button>
+            </li>
           </ul>
        </div>
        <div class="catalogue">
@@ -41,6 +73,13 @@
             Grievance
         </a>
        </div>
+       <ng-container *ngIf="isloading">
+         <div class="loader-overlay">
+           <div class="logo-container">
+             <img src="assets/schemeSync.png" alt="Logo" class="logo-load">
+           </div>
+         </div>
+       </ng-container>
        <div class="modal fade" id="complaintform" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
            <div class="modal-content">
@@ -76,7 +115,7 @@
                       <!-- Phone -->
                       <div class="mb-3 col-6">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="text" id="phone" class="form-control" formControlName="phone">
+                        <input type="text" id="phone" class="form-control" formControlName="phone" maxlength="10">
                         <div class="text-danger" *ngIf="complaintForm.controls['phone'].invalid && complaintForm.controls['phone'].touched">
                           Enter a valid 10-digit phone number!
                         </div>
@@ -110,10 +149,9 @@
                           Please select a category.
                         </div>                       
                       </div>
-                  </div>                
-              
+                  </div>                    
              <div class="modal-footer d-flex">
-               <button type="submit" class="btn btn-success"  data-bs-dismiss="modal" aria-label="Close">Submit</button>
+               <button type="submit" class="btn btn-success" [disabled]="!complaintForm.valid"  data-bs-dismiss="modal" aria-label="Close">Submit</button>
                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
              </div>
             </form>
@@ -121,6 +159,28 @@
            </div>
          </div>
        </div>
+      <!-- Bootstrap Modal -->
+<div class="modal fade" id="referenceid" #referenceModal tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="productModalLabel">Reference ID</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="text-center">
+           <h4>Reference ID = {{ referenceid }}</h4>
+         </div>
+       </div>
+       <div class="modal-footer d-flex">
+         <button type="button" class="btn btn-secondary" (click)="closeModal()" data-bs-dismiss="modal">
+            OK
+          </button>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
     </div>
  </nav>
  

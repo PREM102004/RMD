@@ -3,6 +3,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router} from '@angular/router';
 import { CompanyTypesComponent } from "../company-types/company-types.component";
 import { FormsModule } from '@angular/forms';
+import { UserinfoService } from '../../services/userinfo.service';
 
 @Component({
   selector: 'app-home',
@@ -15,10 +16,13 @@ export class HomeComponent {
   isInView = false; 
   messages: { text: string; sender: string }[] = [];
   userInput: string = '';
+  referenceIdInput: string = ''; // Holds the input value
+  complaintData: any = null; // Stores fetched data
+  errorMessage: string = '';
  
   isChatOpen: boolean = false;
 
-  constructor(private router : Router) {}
+  constructor(private router : Router,private userdata : UserinfoService) {}
 
   ngOnInit(): void {
     this.checkIfInView();
@@ -111,9 +115,22 @@ export class HomeComponent {
   if (input.includes("no")) {
       return "Thank you! Have a great day.";
   }
-
-  
+ 
     return "I'm here to help! You can ask about schemes, eligibility, or how to file a grievance.";
   }
+
+  
+    fetchComplaintData() {
+      this.userdata.getComplaintById(this.referenceIdInput)
+        .then(data => {
+          this.complaintData = data;
+          this.errorMessage = ''; // Clear error message
+        })
+        .catch(error => {
+          this.complaintData = null;
+          this.errorMessage = error.message;
+        });
+    }
+  
   
 }

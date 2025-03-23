@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="product-head text-center mt-3 mb-2">
+      <h3>Grievance List</h3>
+      <div class="border-bottom"></div>
+    </div>
+<table class="table table-bordered" style="border: 1px solid #989898;">
+    <thead>
+      <tr>
+        <th>Reference ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Complaint-Info</th>
+        <th>Complaint desc</th>
+        <th>Clear Complaint</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userDatas" class="align-middle" style="height: 0px;">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.complaintinfo }}</td>
+        <td>{{ user.description }}</td>
+        <td>
+            <button class="deletbtn text-center" (click)="deleteComplaint(user.id)">
+              <i class="fa fa-trash"></i>
+            </button>
+          </td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+  

@@ -93,7 +93,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 20%;
+  width: 30%;
   will-change: transform;
   }
  .Btn-about:hover {
@@ -103,7 +103,20 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
-
+.comdetail-head{
+  font-size: 21px;
+  font-weight: 700;
+  color: #747778;
+}
+.filter-white {
+  filter: invert(1);
+}
+.inputsndbtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: anchor-center;
+}
 .Btn-about:active {
   box-shadow: none;
   transform: translateY(0);

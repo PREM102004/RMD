@@ -131,6 +131,9 @@ export class HomeComponent {
           this.errorMessage = error.message;
         });
     }
-  
+    resettracking(){
+      this.referenceIdInput = '';
+      this.complaintData = '';
+    }
   
 }

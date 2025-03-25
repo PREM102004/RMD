@@ -110,6 +110,7 @@ export class HeaderComponent {
      
   }
   logoutAdmin() {
+    this.password = '';
     localStorage.removeItem('admin');
     this.adminSuccess = false;
     this.route.navigate(['/']); 

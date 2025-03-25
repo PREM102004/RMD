@@ -40,6 +40,9 @@
                   <input
                     type="password"
                     [(ngModel)]="password"
+                    style="border-radius: 5px;
+                    border: 1px solid #ffff;
+                    padding: 3px;"
                     placeholder="Enter password"
                   />
                   <button
@@ -49,7 +52,7 @@
                       padding: 3px 14px !important;
                       background-color: #0054ae !important;
                       transition: background 0.3s ease;
-                      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
                       border: none;
                     "
                     (click)="checkPassword()"

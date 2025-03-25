@@ -22,6 +22,7 @@ export class HeaderComponent {
   adminpwd : any;
   isloading : boolean=false;
   showModal:boolean=false
+  copySuccess = false;
   @ViewChild('referenceModal') referenceModal!: ElementRef;
   constructor(private fb : FormBuilder, private adduser : UserinfoService,private route : Router){
     this.complaintForm = this.fb.group({
@@ -116,5 +117,25 @@ export class HeaderComponent {
     localStorage.removeItem('admin');
     this.adminSuccess = false;
     this.route.navigate(['/']); 
+  }
+  copyreferenceid() {
+    const textElement = document.getElementById('referenceid') as HTMLElement;
+    if (textElement) {
+      const fullText = textElement.innerText.trim();
+      console.log('Full Text:', fullText);
+
+      const words = fullText.split(/\s+/);
+      console.log('Words:', words);
+
+      const actualID = words.length > 1 ? words[2] : fullText;
+      console.log('Actual ID:', actualID);
+
+      navigator.clipboard.writeText(actualID).then(() => {
+        this.copySuccess = true;
+        setTimeout(() => {
+          this.copySuccess = false;
+        }, 3000);
+      }).catch(err => console.error('Copy failed:', err));
+    }
   }
 }

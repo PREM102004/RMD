@@ -9,6 +9,14 @@
     background: #fb0404;
     margin: 10px auto;
 }
+.ag-cell {
+    user-select: text !important; /* Allows text selection */
+    cursor: text; /* Shows a text cursor */
+}
+
+.ag-row {
+    touch-action: manipulation; /* Improves touch handling */
+}
 th{
     background: linear-gradient(to right, #fffde4, #005aa7);
 }

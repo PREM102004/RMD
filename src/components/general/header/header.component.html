@@ -26,13 +26,13 @@
           id="navbarContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
              <li class="nav-item">
-                <a class="nav-link" (click)="isNavbarCollapsed = true" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+                <a class="nav-link" (click)="isNavbarCollapsed = true;this.showPasswordInput = false" [routerLink]="['/home']" routerLinkActive="active">Home</a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" (click)="isNavbarCollapsed = true" [routerLink]="['/about']" routerLinkActive="active">About</a>
+                <a class="nav-link" (click)="isNavbarCollapsed = true;this.showPasswordInput = false" [routerLink]="['/about']" routerLinkActive="active">About</a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" (click)="isNavbarCollapsed = true" [routerLink]="['/products']" routerLinkActive="active">Schemes</a>
+                <a class="nav-link" (click)="isNavbarCollapsed = true;this.showPasswordInput = false" [routerLink]="['/products']" routerLinkActive="active">Schemes</a>
              </li>
              <li class="nav-item">
                <a class="nav-link"  routerLinkActive="active" (click)="togglePasswordInput()">Admin</a>
@@ -41,7 +41,7 @@
                     type="password"
                     [(ngModel)]="password"
                     style="border-radius: 5px;
-                    border: 1px solid #ffff;
+                    border: 1px solid #979292;
                     padding: 3px;"
                     placeholder="Enter password"
                   />
@@ -170,9 +170,10 @@
          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
        </div>
        <div class="modal-body">
-         <div class="text-center">
-           <h4>Reference ID = {{ referenceid }}</h4>
+         <div id="" class="text-center" (click)="copyreferenceid()">
+           <h4 id="referenceid">{{ referenceid }}</h4>
          </div>
+         <div class="text-success text-center" *ngIf="copySuccess ">Copied Successfully!</div>
        </div>
        <div class="modal-footer d-flex">
          <button type="button" class="btn btn-secondary" (click)="closeModal()" data-bs-dismiss="modal">

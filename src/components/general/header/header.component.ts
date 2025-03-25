@@ -84,7 +84,7 @@ export class HeaderComponent {
     }
   togglePasswordInput(){
 
-    
+    this.isNavbarCollapsed = true;
     if (this.route.url === '/admin' || this.adminSuccess) {
       this.showPasswordInput = false;
       this.route.navigate(['/admin'])
@@ -94,7 +94,7 @@ export class HeaderComponent {
 
   }
   checkPassword(){
-     if(this.password == this.adminpwd){
+     if(this.password == 'admin'){
       this.route.navigate(['/admin']).then(() => {
         localStorage.setItem("admin","true");
         this.adminSuccess = true;

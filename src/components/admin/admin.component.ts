@@ -19,13 +19,13 @@ export class AdminComponent {
   gridColumnApi:any;
  userDatas : any[]=[]
  columnDefs: ColDef[] = [
-  { field: 'id', headerName: 'Reference ID',headerTooltip: 'Reference ID', sortable: true, filter: true },
-  { field: 'name', headerName: 'Name', headerTooltip: 'Name',sortable: true, filter: true },
-  { field: 'email', headerName: 'Email', headerTooltip: 'Email',sortable: true, filter: true },
-  { field: 'phone', headerName: 'Phone',headerTooltip: 'Phone', sortable: true, filter: true },
-  { field: 'schemedetails', headerName: 'Scheme Details',headerTooltip: 'Scheme Details', sortable: true, filter: true },
-  { field: 'complaintinfo', headerName: 'Complaint Info',headerTooltip: 'Complaint Info', sortable: true, filter: true },
-  { field: 'description', headerName: 'Complaint Desc',headerTooltip: 'Complaint Desc', sortable: true, filter: true },
+  { field: 'id', headerName: 'Reference ID',headerTooltip: 'Reference ID', minWidth:150, sortable: true, filter: true , flex : 1 },
+  { field: 'name', headerName: 'Name', headerTooltip: 'Name', minWidth: 150,sortable: true, filter: true , flex : 1 },
+  { field: 'email', headerName: 'Email', headerTooltip: 'Email', minWidth:150,sortable: true, filter: true , flex : 1 },
+  { field: 'phone', headerName: 'Phone',headerTooltip: 'Phone',  minWidth:150,sortable: true, filter: true , flex : 1 },
+  { field: 'schemedetails', headerName: 'Scheme Details',headerTooltip: 'Scheme Details', minWidth:150, sortable: true, filter: true , flex : 1 },
+  { field: 'complaintinfo', headerName: 'Complaint Info',headerTooltip: 'Complaint Info',  minWidth:150,sortable: true, filter: true , flex : 1 },
+  { field: 'description', headerName: 'Complaint Desc',headerTooltip: 'Complaint Desc', minWidth:150, sortable: true, filter: true , flex : 1 },
   {
     field: 'actions',
     headerName: 'Clear Complaint',
@@ -36,10 +36,15 @@ export class AdminComponent {
     },
     onCellClicked: (params: any) => {
       this.deleteComplaint(params.data.id);
-    }
+    },
+    flex : 1
   }
 ];
 defaultColDef ={ resizable : true,flex : 1}
+gridOptions = {
+  rowHeight:150,
+  headerHeight:150, 
+};
   constructor(private userdata : UserinfoService){
  
   }

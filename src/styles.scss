@@ -1,5 +1,5 @@
 .modal-dialog {
-    max-width: 85vw !important; /* Set width to 90% of the viewport */
+    max-width: 85vh !important; /* Set width to 90% of the viewport */
     height: auto !important;
   }
   .modal-header {
@@ -57,6 +57,12 @@
     }
     100% {
       transform: scale(1);
+    }
+  }
+  @media (max-width : 768px){
+    .modal-dialog {
+      max-width: 100% !important; /* Set width to 90% of the viewport */
+      height: auto !important;
     }
   }
   

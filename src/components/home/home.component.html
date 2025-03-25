@@ -26,33 +26,37 @@
                 <div class="row">
                   <h4 class="text-center">Enter your Reference ID</h4>
                   <div class="col-12 inputsndbtn mt-3">
-                    <input type="text" [(ngModel)]="referenceIdInput" class="form-control text-center mt-2" style="width: 50%;border: 2px solid #aba8c9;" placeholder="Enter Reference ID" />
-                    <button class="btn btn-primary mt-3" style="width: 50%;" (click)="fetchComplaintData()">Check Status</button>
+                    <!-- <input type="text" [(ngModel)]="referenceIdInput" class="form-control text-center mt-2" style="width: 50%;border: 2px solid #aba8c9;" placeholder="Enter Reference ID" />
+                    <button class="btn btn-primary mt-3" style="width: 50%;" (click)="fetchComplaintData()">Check Status</button> -->
+                    <div class="col-12 d-flex flex-column align-items-center mt-3">
+                      <input type="text" [(ngModel)]="referenceIdInput" class="form-control text-center mt-2 w-100" placeholder="Enter Reference ID" />
+                      <button class="btn btn-primary mt-3 w-100" (click)="fetchComplaintData()">Check Status</button>
+                    </div>
                   </div>         
                 </div>
              
               <div *ngIf="complaintData" class="mt-3 p-3 row border rounded text-start">
                 <h5 class="text-start comdetail-head mb-3 p-2">Complaint Details</h5>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <p><strong>Current Status:</strong> <span style="color: #747778;
                     font-weight: 500;
                     font-size: 17px;
                     background-color: aquamarine;
                     padding: 10px;
                     margin-left: 10px;
-                    border-radius: 22px;">Received the Grievance</span></p>
+                    border-radius: 22px;" class="mobview">Received the Grievance</span></p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
 
-                  <p><strong>Name:</strong><span class="ms-2">{{ complaintData.name }}</span> </p>
+                  <p><strong>Name:</strong><span class="ms-2 mobview">{{ complaintData.name }}</span> </p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
 
-                  <p><strong>Email:</strong> <span class="ms-2">{{ complaintData.email }}</span></p>
+                  <p><strong>Email:</strong> <span class="ms-2 mobview">{{ complaintData.email }}</span></p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
 
-                  <p><strong>Complaint:</strong><span class="ms-2">{{ complaintData.complaintinfo }}</span> </p>
+                  <p><strong>Complaint:</strong><span class="ms-2 mobview">{{ complaintData.complaintinfo }}</span> </p>
                 </div>
                 
                 

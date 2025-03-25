@@ -84,9 +84,10 @@ export class HeaderComponent {
     }
   togglePasswordInput(){
 
-    this.isNavbarCollapsed = true;
+   
     if (this.route.url === '/admin' || this.adminSuccess) {
       this.showPasswordInput = false;
+      this.isNavbarCollapsed = true;
       this.route.navigate(['/admin'])
     } else {
       this.showPasswordInput = !this.showPasswordInput; 
@@ -98,6 +99,7 @@ export class HeaderComponent {
       this.route.navigate(['/admin']).then(() => {
         localStorage.setItem("admin","true");
         this.adminSuccess = true;
+        this.isNavbarCollapsed = true;
         this.showPasswordInput = false;
         console.log('Navigation successful');
       }).catch(err => {

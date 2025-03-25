@@ -41,10 +41,6 @@ export class AdminComponent {
   }
 ];
 defaultColDef ={ resizable : true,flex : 1}
-gridOptions = {
-  rowHeight:150,
-  headerHeight:150, 
-};
   constructor(private userdata : UserinfoService){
  
   }

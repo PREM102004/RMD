@@ -3,20 +3,45 @@ import { UserinfoService } from '../../services/userinfo.service';
 import { Observable } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
+import {AgGridModule} from 'ag-grid-angular';
+import { ColDef,AllCommunityModule,ModuleRegistry  } from 'ag-grid-community';
+ModuleRegistry.registerModules([AllCommunityModule]);
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,AgGridModule],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.scss'
 })
 export class AdminComponent {
- 
+  public tooltipShowDelay = 100;
+  gridApi : any;
+  gridColumnApi:any;
  userDatas : any[]=[]
-
+ columnDefs: ColDef[] = [
+  { field: 'id', headerName: 'Reference ID',headerTooltip: 'Reference ID', sortable: true, filter: true },
+  { field: 'name', headerName: 'Name', headerTooltip: 'Name',sortable: true, filter: true },
+  { field: 'email', headerName: 'Email', headerTooltip: 'Email',sortable: true, filter: true },
+  { field: 'phone', headerName: 'Phone',headerTooltip: 'Phone', sortable: true, filter: true },
+  { field: 'schemedetails', headerName: 'Scheme Details',headerTooltip: 'Scheme Details', sortable: true, filter: true },
+  { field: 'complaintinfo', headerName: 'Complaint Info',headerTooltip: 'Complaint Info', sortable: true, filter: true },
+  { field: 'description', headerName: 'Complaint Desc',headerTooltip: 'Complaint Desc', sortable: true, filter: true },
+  {
+    field: 'actions',
+    headerName: 'Clear Complaint',
+    cellRenderer: (params: any) => {
+      return `<button style="border: none;
+    background-color: transparent;
+    color:#005aa7 ;"><i class="fa fa-trash"></i></button>`;
+    },
+    onCellClicked: (params: any) => {
+      this.deleteComplaint(params.data.id);
+    }
+  }
+];
+defaultColDef ={ resizable : true,flex : 1}
   constructor(private userdata : UserinfoService){
-
+ 
   }
   async ngOnInit(){
     this.userDatas = await this.userdata.getComplaints();
@@ -26,6 +51,14 @@ export class AdminComponent {
     if (confirm('Are you sure you want to clear this complaint?')) {
       await this.userdata.deleteComplaint(id);
       this.userDatas = this.userDatas.filter(complaint => complaint.id !== id);
+    }
+  }
+  onGridReady(params: any) {
+    this.gridApi = params.api;
+    console.log(' this.gridApi: ',  this.gridApi);
+    this.gridColumnApi = params.columnApi;
+    if(this.gridApi){
+      this.gridApi.sizeColumnsToFit();
     }
   }
 

@@ -34,7 +34,10 @@
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "node_modules/aos/dist/aos.css"
+              "node_modules/aos/dist/aos.css",
+            "node_modules/ag-grid-community/styles/ag-theme-balham.css",
+  "node_modules/ag-grid-community/styles/ag-theme-material.css",
+  "node_modules/ag-grid-community/styles/ag-theme-alpine.css"
             ],
             "scripts": [
                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -98,7 +101,10 @@
               "node_modules/ngx-toastr/toastr.css",
              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss",
-              "node_modules/aos/dist/aos.css"
+              "node_modules/aos/dist/aos.css",
+                "node_modules/ag-grid-community/styles/ag-theme-balham.css",
+  "node_modules/ag-grid-community/styles/ag-theme-material.css",
+  "node_modules/ag-grid-community/styles/ag-theme-alpine.css"
             ],
             "scripts": [
                "node_modules/aos/dist/aos.js"

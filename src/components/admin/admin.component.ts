@@ -37,7 +37,8 @@ export class AdminComponent {
     onCellClicked: (params: any) => {
       this.deleteComplaint(params.data.id);
     },
-    flex : 1
+    flex : 1,
+    minWidth:150,
   }
 ];
 defaultColDef ={ resizable : true,flex : 1}
